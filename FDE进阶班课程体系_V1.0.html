@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-CN" data-page="advanced" data-source="FDE进阶班课程体系_V1.0.md">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="在受控项目中完成问题定义、系统实现、失败治理、上线交接与资产复用。">
+  <title>川麒科技 FDE 进阶班课程体系 · FDE 人才培养体系</title>
+  <link rel="stylesheet" href="fde-curriculum.css">
+</head>
+<body class="document-page tone-violet">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="FDE人才培养体系门户.html" aria-label="返回 FDE 人才培养体系门户">
+      <span class="brand-mark">F</span><span><b>FDE</b><small>FIELD ENABLED</small></span>
+    </a>
+    <nav class="main-nav" aria-label="文档导航"><a class="nav-link " href="FDE人才培养体系门户.html">体系门户</a><a class="nav-link " href="FDE人才培养体系总方案_V1.0.html">体系总览</a><a class="nav-link " href="FDE入门班课程体系_V1.0.html">入门班</a><a class="nav-link is-active" href="FDE进阶班课程体系_V1.0.html">进阶班</a><a class="nav-link " href="FDE人才培养体系门户.html#scenario-library">场景库</a></nav>
+    <div class="top-actions">
+      <button class="icon-button" type="button" data-action="theme" aria-label="切换主题" title="切换主题">◐</button>
+      <button class="icon-button mobile-only" type="button" data-action="sidebar" aria-label="打开目录">☰</button>
+    </div>
+  </header>
+
+  <div class="reading-progress" data-reading-progress></div>
+  <div class="document-layout">
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-head">
+        <span class="micro-label">DOCUMENT MAP</span>
+        <button class="sidebar-close mobile-only" type="button" data-action="sidebar">×</button>
+      </div>
+      <div class="source-card">
+        <span class="source-dot"></span>
+        <div><span>内容源</span><strong>FDE进阶班课程体系_V1.0.md</strong></div>
+      </div>
+      <nav class="doc-toc" aria-label="本页目录" data-toc>
+        <a class="toc-link toc-level-2" href="#section-01">0. 先把课程边界说清楚</a><a class="toc-link toc-level-3" href="#section-02">0.1 本方案采用的课程口径</a><a class="toc-link toc-level-3" href="#section-03">0.2 课程不作出的承诺</a><a class="toc-link toc-level-2" href="#section-04">1. 课程定位与结课结果</a><a class="toc-link toc-level-3" href="#section-05">1.1 课程总目标</a><a class="toc-link toc-level-3" href="#section-06">1.2 结课时必须拿出的完整项目包</a><a class="toc-link toc-level-3" href="#section-07">1.3 目标能力级别</a><a class="toc-link toc-level-2" href="#section-08">2. 课程依据与方法论合并</a><a class="toc-link toc-level-3" href="#section-09">2.1 五阶段生命周期</a><a class="toc-link toc-level-3" href="#section-10">2.2 OpenFDE 4C 映射</a><a class="toc-link toc-level-3" href="#section-11">2.3 六项能力模型</a><a class="toc-link toc-level-3" href="#section-12">2.4 训练四件事</a><a class="toc-link toc-level-3" href="#section-13">2.5 OpenFDE 八项能力在课程中的落点</a><a class="toc-link toc-level-3" href="#section-14">2.6 OpenFDE 十步工作流的课堂映射</a><a class="toc-link toc-level-3" href="#section-15">2.7 客户规模和行业会改变打法</a><a class="toc-link toc-level-3" href="#section-16">2.8 每周三层学习结构</a><a class="toc-link toc-level-2" href="#section-17">3. 课程结构与运行方式</a><a class="toc-link toc-level-3" href="#section-18">3.1 总体排期</a><a class="toc-link toc-level-3" href="#section-19">3.2 学员和教学配置</a><a class="toc-link toc-level-3" href="#section-20">3.3 两条学习轨道</a><a class="toc-link toc-level-3" href="#section-21">3.4 每场固定教学闭环</a><a class="toc-link toc-level-3" href="#section-22">3.5 教学中的现场干扰卡</a><a class="toc-link toc-level-2" href="#section-23">4. 三个贯穿项目</a><a class="toc-link toc-level-3" href="#section-24">4.1 PRJ-A：企业知识 Agent</a><a class="toc-link toc-level-3" href="#section-25">4.2 PRJ-B：企业流程 Agent</a><a class="toc-link toc-level-3" href="#section-26">4.3 PRJ-C：陌生业务 MVD 挑战</a><a class="toc-link toc-level-3" href="#section-27">4.4 个人贡献合同</a><a class="toc-link toc-level-2" href="#section-28">5. 16 场核心实训课表</a><a class="toc-link toc-level-3" href="#section-29">第 1 周：从“想做 AI”到可验收问题</a><a class="toc-link toc-level-4" href="#section-30">L2-S01｜FDE 的责任边界与结果意识</a><a class="toc-link toc-level-4" href="#section-31">L2-S02｜客户发现、访谈与流程观察</a><a class="toc-link toc-level-3" href="#section-32">第 2 周：场景判断、ROI 与 MVD</a><a class="toc-link toc-level-4" href="#section-33">L2-S03｜场景筛选、PSF 与 ROI 粗算</a><a class="toc-link toc-level-4" href="#section-34">L2-S04｜解决方案表达与系统边界</a><a class="toc-link toc-level-3" href="#section-35">第 3 周：数据准备与知识工程</a><a class="toc-link toc-level-4" href="#section-36">L2-S05｜数据可用性、治理与安全前置</a><a class="toc-link toc-level-4" href="#section-37">L2-S06｜知识单元、切分、元数据、FAQ 与 SOP</a><a class="toc-link toc-level-3" href="#section-38">第 4 周：RAG 构建、评测与修复</a><a class="toc-link toc-level-4" href="#section-39">L2-S07｜从材料到可运行的 RAG</a><a class="toc-link toc-level-4" href="#section-40">L2-S08｜评估集、Bad Case 与回归</a><a class="toc-link toc-level-3" href="#section-41">第 5 周：Agent、Workflow 与工具契约</a><a class="toc-link toc-level-4" href="#section-42">L2-S09｜选择 RAG、Agent、Workflow 还是规则</a><a class="toc-link toc-level-4" href="#section-43">L2-S10｜工具/API 契约、字段映射、状态与幂等</a><a class="toc-link toc-level-3" href="#section-44">第 6 周：故障恢复、集成与生产化</a><a class="toc-link toc-level-4" href="#section-45">L2-S11｜故障注入、重试、降级、重放与对账</a><a class="toc-link toc-level-4" href="#section-46">L2-S12｜部署、权限、日志、成本与回滚</a><a class="toc-link toc-level-3" href="#section-47">第 7 周：PoC、验收、交付与采用</a><a class="toc-link toc-level-4" href="#section-48">L2-S13｜从 Demo 到 MVD/PoC</a><a class="toc-link toc-level-4" href="#section-49">L2-S14｜用户测试、培训、RACI 与上线交接</a><a class="toc-link toc-level-3" href="#section-50">第 8 周：运营、产品化与最终项目评审</a><a class="toc-link toc-level-4" href="#section-51">L2-S15｜上线后的监控、Bad Case 与持续迭代</a><a class="toc-link toc-level-4" href="#section-52">L2-S16｜产品化 Gate、第三方复现与最终答辩</a><a class="toc-link toc-level-2" href="#section-53">6. 第 9-12 周现场认证加训</a><a class="toc-link toc-level-3" href="#section-54">P01｜真实岗位访谈与诊断</a><a class="toc-link toc-level-3" href="#section-55">P02｜MVD 方案、ROI 与验收基线</a><a class="toc-link toc-level-3" href="#section-56">P03｜试点战争室与上线复盘</a><a class="toc-link toc-level-3" href="#section-57">P04｜L3-L4 认证答辩与资产复用</a><a class="toc-link toc-level-2" href="#section-58">7. 评估与认证规则</a><a class="toc-link toc-level-3" href="#section-59">7.1 六道内部 MVP Gate</a><a class="toc-link toc-level-3" href="#section-60">7.2 100 分项目评分建议</a><a class="toc-link toc-level-3" href="#section-61">7.3 六项能力评分</a><a class="toc-link toc-level-3" href="#section-62">7.4 L3 与 L4 的认定</a><a class="toc-link toc-level-3" href="#section-63">7.5 一票否决</a><a class="toc-link toc-level-3" href="#section-64">7.6 补做规则</a><a class="toc-link toc-level-2" href="#section-65">8. 评审重点：同一套标准贯穿准入和结业</a><a class="toc-link toc-level-2" href="#section-66">9. 工具与技术路线</a><a class="toc-link toc-level-3" href="#section-67">9.1 推荐的教学基线</a><a class="toc-link toc-level-3" href="#section-68">9.2 工具选择的强制问题</a><a class="toc-link toc-level-3" href="#section-69">9.3 工具地图的使用方式</a><a class="toc-link toc-level-3" href="#section-70">9.4 开源许可和数据边界</a><a class="toc-link toc-level-2" href="#section-71">10. Datawhale / OpenFDE 信号库的学习安排</a><a class="toc-link toc-level-2" href="#section-72">11. 教师备课与课堂资产</a><a class="toc-link toc-level-3" href="#section-73">11.1 助教反馈格式</a><a class="toc-link toc-level-2" href="#section-74">12. 运营节奏和首期测量</a><a class="toc-link toc-level-3" href="#section-75">12.1 每周节奏</a><a class="toc-link toc-level-3" href="#section-76">12.2 首期只记录事实，不预填结果</a><a class="toc-link toc-level-2" href="#section-77">13. 最终交付目录建议</a><a class="toc-link toc-level-2" href="#section-78">14. 课程设计结论</a><a class="toc-link toc-level-2" href="#section-79">15. 资料依据与使用边界</a>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="micro-label">SOURCE INTEGRITY</span>
+        <p>本页由 Markdown 原文逐段转换，保留标题、表格、链接、代码块与原始数据。</p>
+        <span class="source-size">51,190 bytes UTF-8</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="doc-hero" data-search-scope>
+        <div class="hero-orbit" aria-hidden="true"><span></span><i></i><b></b></div>
+        <div class="eyebrow"><span class="pulse"></span>FDE · FIELD CORE</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="overline">L2/L3 Field Delivery</p>
+            <h1>川麒科技 FDE 进阶班课程体系</h1>
+            <p class="hero-subtitle">在受控项目中完成问题定义、系统实现、失败治理、上线交接与资产复用。</p>
+            <div class="hero-actions">
+              <button class="primary-button" type="button" data-action="print">打印 / 导出 PDF <span>↗</span></button>
+              <label class="search-box"><span>⌕</span><input type="search" placeholder="搜索本页内容" data-search aria-label="搜索本页内容"></label>
+            </div>
+          </div>
+          <div class="hero-stats" aria-label="文档指标"><div class="hero-stat"><span>核心周期</span><strong>8 周 · 16 节</strong></div><div class="hero-stat"><span>认证延展</span><strong>4 周 · P01-P04</strong></div><div class="hero-stat"><span>训练级别</span><strong>L2/L3 → L4</strong></div></div>
+        </div>
+      </section>
+
+      <div class="mobile-toc-bar mobile-only"><span>本页目录</span><button type="button" data-action="sidebar">查看章节 <span>→</span></button></div>
+      <article id="article" class="markdown-body" data-article data-search-scope><p>版本：V1.0（课程设计建议稿）</p>
+<p>定位：企业 AI 落地实战、项目教练与 L3-L4 证据培养</p>
+<p>适用对象：完成基础 AI 应用训练，或已经具备企业软件、实施、产品、咨询、项目交付经验的学员</p>
+<hr class="section-rule">
+<h2 id="section-01" data-heading="true">0. 先把课程边界说清楚</h2>
+<h3 id="section-02" data-heading="true">0.1 本方案采用的课程口径</h3>
+<p>工作区现有资料存在一个必须正面处理的差异：</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">资料口径</th><th scope="col">已写明的目标</th></tr></thead><tbody><tr><td>现有第二层运营版</td><td>8 周、16 场、每场 4 小时；以 PRJ-A、PRJ-B、PRJ-C 训练可复核的项目行为，目标偏 L1+ 到部分 L2</td></tr><tr><td>进阶班招聘需求与 CTO 启动要求</td><td>进阶班重点培养 L3-L4：能做业务诊断、ROI、交付推进、上线复盘和资产沉淀</td></tr></tbody></table></div>
+<p>这两个口径不能被混写成“上完 8 周课就自动达到 L3-L4”。本方案的处理方式是：</p>
+<ol class="content-list"><li><strong>8 周核心实训</strong>：服从现有第二层的运营约束，完成 16 场、3 个项目和 6 道 MVP Gate。</li><li><strong>4 周现场认证加训</strong>：以真实岗位访谈或高度还原的客户简报为输入，完成 MVD 方案、交付演练、结果复盘和资产复用。</li><li><strong>L3-L4 只看证据，不看出勤、不看工具数量、不看口头自评</strong>。核心实训通过是进入认证加训的条件，不等于 L3-L4 认证。</li></ol>
+<p>如果公司只能提供一个产品 SKU，建议对外命名为：</p>
+<blockquote><p><strong>FDE 企业 AI 落地进阶班：8 周核心课 + 4 周项目认证</strong></p></blockquote>
+<h3 id="section-03" data-heading="true">0.2 课程不作出的承诺</h3>
+<ul class="content-list"><li>不承诺学员一定就业、拿到 Offer 或进入某个客户项目。</li><li>不把课程内部 MVP Gate 写成 OpenFDE 的正式 Gate，也不宣称通过任何外部认证。</li><li>不把课堂 Demo 写成生产系统，不把模拟数据结果写成客户真实 ROI。</li><li>不让学员接触未经授权的生产数据、生产账号或真实客户密钥。</li><li>不把任何一个模型、平台或工具品牌固定为唯一答案；工具、价格和部署能力会变化，能力标准不随工具更换。</li></ul>
+<hr class="section-rule">
+<h2 id="section-04" data-heading="true">1. 课程定位与结课结果</h2>
+<h3 id="section-05" data-heading="true">1.1 课程总目标</h3>
+<p>把学员从“会使用 AI 工具或做一个 Demo”，训练到能够在导师监督或小组协作下：</p>
+<ol class="content-list"><li>听懂客户的业务语言，区分事实、假设和愿望；</li><li>画清工作流中的输入、处理、输出、审核和异常；</li><li>判断一个场景是否值得做、是否适合 AI、是否具备数据与权限条件；</li><li>选择规则、RAG、Agent、Workflow、传统软件或人工流程的合适组合；</li><li>做出能运行、能评测、能追踪、能回滚的窄场景 MVD；</li><li>用业务指标、系统指标、采用指标和风险指标验收；</li><li>组织培训、用户试用、问题关闭和上线交接；</li><li>把一次项目沉淀成模板、组件、评估集、连接器和交付手册。</li></ol>
+<h3 id="section-06" data-heading="true">1.2 结课时必须拿出的完整项目包</h3>
+<p>每位学员都要有个人证据包；每个小组要有团队项目包。</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">项目包</th><th scope="col">必须包含</th></tr></thead><tbody><tr><td>业务诊断包</td><td>业务问题说明、访谈记录、角色与利益相关者图、现状流程、问题/假设清单</td></tr><tr><td>场景方案包</td><td>场景评分卡、Pain-Economics-Feasibility 判断、MVD Brief、范围内/范围外、ROI 假设</td></tr><tr><td>数据知识包</td><td>数据源清单、数据 owner、权限与敏感性说明、清洗记录、知识单元、FAQ/SOP、版本与更新规则</td></tr><tr><td>AI 应用包</td><td>RAG 或 Workflow/Agent 可运行版本、输入输出契约、技术路线选择记录、系统边界</td></tr><tr><td>评测治理包</td><td>Golden Set、正常/失败测试、错误分类、引用或工具调用证据、回归记录、版本比较</td></tr><tr><td>生产交付包</td><td>部署说明、健康检查、日志/追踪、权限、审批、人工兜底、回滚、SLA/SLO 草案</td></tr><tr><td>采用运营包</td><td>Demo 讲稿、用户测试、培训材料、反馈记录、Bad Case、迭代计划、运营指标</td></tr><tr><td>产品化资产包</td><td>至少一个可复用模板/组件/评估集/连接器/交付手册，且由另一名成员成功复现或使用</td></tr></tbody></table></div>
+<h3 id="section-07" data-heading="true">1.3 目标能力级别</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">级别</th><th scope="col">本课程中的可观察表现</th></tr></thead><tbody><tr><td>L1</td><td>在脚手架和指导下完成一个可运行的 AI 功能，并能说清至少三个不能做的事情</td></tr><tr><td>L2</td><td>能将 AI 接入一个完整流程，处理基础异常，具备权限、日志、测试和人工兜底意识</td></tr><tr><td>L3</td><td>能做业务访谈、流程拆解、场景判断、ROI 假设、MVD 范围和验收设计；可进入项目候选池，但不等同于独立负责客户</td></tr><tr><td>L4</td><td>能把项目经验沉淀为可复用资产，由他人复现，通过回归测试，并能面向技术和业务双方答辩</td></tr><tr><td>L5</td><td>能带领 FDE 小队、管理多方关系、推动组织采用、建立产品化飞轮；本课程不直接授予 L5</td></tr></tbody></table></div>
+<hr class="section-rule">
+<h2 id="section-08" data-heading="true">2. 课程依据与方法论合并</h2>
+<h3 id="section-09" data-heading="true">2.1 五阶段生命周期</h3>
+<p>课程不按“工具清单”排课，而按企业 AI 项目生命周期排课：</p>
+<ol class="content-list"><li>业务理解与场景方案设计；</li><li>数据治理与知识工程；</li><li>AI 应用构建与系统集成；</li><li>测试验收与实施交付；</li><li>运营优化与规模化推广。</li></ol>
+<h3 id="section-10" data-heading="true">2.2 OpenFDE 4C 映射</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">4C</th><th scope="col">课程训练重点</th><th scope="col">主要证据</th></tr></thead><tbody><tr><td>Context</td><td>业务目标、角色、流程、数据、权限、失败成本、购买与采用条件</td><td>访谈记录、流程图、利益相关者图、问题/假设日志</td></tr><tr><td>Code</td><td>全栈、LLM 应用、RAG、Agent、Workflow、企业系统集成、部署</td><td>可运行系统、接口契约、部署包、代码/配置差异</td></tr><tr><td>Calibration</td><td>Golden Set、人工复核、自动评测、错误分类、日志、版本与成本</td><td>评测报告、Bad Case、回归结果、监控与审计记录</td></tr><tr><td>Compounding</td><td>把现场发现反哺模板、组件、连接器、评估集、产品反馈和组织方法</td><td>复用资产、复现记录、产品化 Gate、复盘与路线图</td></tr></tbody></table></div>
+<p>课程还用“端到端交付”作为贯穿主线：学员必须证明自己能从问题走到可使用的受控系统，而不是只在其中一段表现出色。</p>
+<h3 id="section-11" data-heading="true">2.3 六项能力模型</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">川麒六项能力</th><th scope="col">训练内容</th><th scope="col">结课证据</th></tr></thead><tbody><tr><td>技术能力</td><td>模型/API、RAG、Agent、Workflow、数据处理、接口、权限、日志、评测、部署</td><td>能运行、调试、评测和复现系统</td></tr><tr><td>业务能力</td><td>访谈、观察、流程诊断、痛点和经济性判断</td><td>能把一句“全面用 AI”改写成可验收问题</td></tr><tr><td>产品能力</td><td>MVD、范围削减、用户体验、复用模式、产品反馈</td><td>有明确的“先做/不做/下一步”及复用资产</td></tr><tr><td>交付能力</td><td>计划、依赖、变更、验收、培训、交接、回滚</td><td>能组织上线和关闭问题，不靠口头说明</td></tr><tr><td>组织推动</td><td>多方沟通、RACI、冠军用户、采纳、内部销售</td><td>用户愿意试，责任边界清楚，反馈进入迭代</td></tr><tr><td>心智素质</td><td>在需求混乱、数据缺失、反复修改、失败和压力中保持秩序</td><td>现场事件中先澄清约束、记录风险、选择下一步动作</td></tr></tbody></table></div>
+<h3 id="section-12" data-heading="true">2.4 训练四件事</h3>
+<p>所有学员必须完成四个贯穿任务：</p>
+<ol class="content-list"><li>访谈一个真实岗位或高度还原的岗位；</li><li>改造一个重复业务流程；</li><li>做一次上线/试运行复盘；</li><li>沉淀一个可复用模板或资产。</li></ol>
+<h3 id="section-13" data-heading="true">2.5 OpenFDE 八项能力在课程中的落点</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">OpenFDE 能力</th><th scope="col">课程对应课次</th><th scope="col">证据</th></tr></thead><tbody><tr><td>基础工程能力</td><td>S07、S10、S12</td><td>服务、接口、容器、配置和部署</td></tr><tr><td>AI 应用工程</td><td>S07-S11</td><td>RAG、Agent、Workflow、工具调用和状态</td></tr><tr><td>企业系统集成</td><td>S04、S10-S12</td><td>API、字段映射、权限、审计、回滚</td></tr><tr><td>评测与可观测</td><td>S08、S11、S12、S15</td><td>Golden Set、日志、指标、回归和告警</td></tr><tr><td>客户发现</td><td>S01-S04、P01</td><td>访谈、观察、痛点、经济性和可行性</td></tr><tr><td>利益相关者沟通</td><td>S02、S13、S14、P03</td><td>RACI、客户委员会、用户培训和升级</td></tr><tr><td>产品判断</td><td>S03、S04、S09、S15、S16</td><td>范围削减、方案取舍、复用和产品化</td></tr><tr><td>模糊环境中的端到端交付</td><td>全程，重点为 P01-P04</td><td>从陌生问题到结果、复盘和资产复用</td></tr></tbody></table></div>
+<h3 id="section-14" data-heading="true">2.6 OpenFDE 十步工作流的课堂映射</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">工作流步骤</th><th scope="col">课程中的训练</th></tr></thead><tbody><tr><td>账户与场景选择</td><td>S03 的客户规模/行业/场景筛选</td></tr><tr><td>Discovery</td><td>S02、P01 的访谈、观察和问题定义</td></tr><tr><td>技术范围界定</td><td>S04、S09 的 AI 与非 AI 方案取舍</td></tr><tr><td>架构设计</td><td>S04、S10、S12</td></tr><tr><td>原型</td><td>S07、S11 的可运行主链路</td></tr><tr><td>评测</td><td>S08、S11、S15</td></tr><tr><td>生产化</td><td>S12、P02 的权限、日志、回滚和运行条件</td></tr><tr><td>采用</td><td>S14、P03 的用户测试、培训和冠军用户</td></tr><tr><td>泛化</td><td>S15、S16 的模板、连接器、评估集和复制</td></tr><tr><td>商业扩展</td><td>P02、P03、P04 的停止/继续/扩大判断</td></tr></tbody></table></div>
+<p>学员不是背十个名词，而是要能说明当前项目处于哪一步、进入下一步需要什么证据、如果证据不成立应当停止还是降级。</p>
+<h3 id="section-15" data-heading="true">2.7 客户规模和行业会改变打法</h3>
+<p>课程至少用一次同一场景做三种客户版本，让学员比较 FDE 的交付姿势：</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">客户层级</th><th scope="col">训练打法</th><th scope="col">学员必须回答</th></tr></thead><tbody><tr><td>SMB/初创</td><td>一个高频痛点、快速可见、模板化、自助或轻交付</td><td>如何让单客交付成本接近零，哪些定制必须拒绝</td></tr><tr><td>中型企业</td><td>一个部门、一个 KPI、多线程沟通、业务 champion 和小队协作</td><td>谁拍板、谁否决、谁使用，怎样防止项目卡在单一联系人</td></tr><tr><td>大型/央国企</td><td>灯塔 POC、企业 sponsor、RACI、私有化/信创和合规前置</td><td>怎样在产品化门槛下控制定制债，并把能力交回客户团队</td></tr></tbody></table></div>
+<p>行业案例只用于训练切入点和红线意识。金融、医疗、政府场景优先从低风险、可人工复核、不碰终局决策的流程切入；制造场景优先从知识、工单、异常和质检辅助切入，不直接控制安全产线；零售和 SaaS 的面客输出要考虑表述责任、数据隔离和客户数据不用于训练。</p>
+<h3 id="section-16" data-heading="true">2.8 每周三层学习结构</h3>
+<p>每周都按 Datawhale 的三种内容组织：</p>
+<ol class="content-list"><li><strong>专题分享</strong>：讲师、项目负责人或行业专家讲一条真实方法或复盘；</li><li><strong>自主学习</strong>：学员从指定章节、工具文档或信号库中选择与本周问题有关的资料；</li><li><strong>开放实践</strong>：把本周知识用于 PRJ-A、PRJ-B、PRJ-C 或现场认证任务。</li></ol>
+<p>专题分享不替代实践，自主学习不以读完页数作为成绩，开放实践必须产生可以进入项目包的证据。</p>
+<hr class="section-rule">
+<h2 id="section-17" data-heading="true">3. 课程结构与运行方式</h2>
+<h3 id="section-18" data-heading="true">3.1 总体排期</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">阶段</th><th scope="col">周次</th><th scope="col">形式</th><th scope="col">结果</th></tr></thead><tbody><tr><td>核心实训</td><td>第 1-8 周</td><td>每周六、日各 1 场，每场 4 小时</td><td>PRJ-A、PRJ-B、PRJ-C，完成 6 道 MVP Gate</td></tr><tr><td>现场认证加训</td><td>第 9-12 周</td><td>每周 1 次认证工作坊 + 平日项目工作</td><td>L3 诊断证据、L4 资产复用证据、最终答辩</td></tr></tbody></table></div>
+<p>核心实训共 16 场、64 个名义课堂小时。课外项目工作量按每周 4-6 小时规划，首期必须实测，不把规划小时数写成已验证的最佳值。</p>
+<h3 id="section-19" data-heading="true">3.2 学员和教学配置</h3>
+<ul class="content-list"><li>推荐正式学员上限：24 人；每组 4-6 人。</li><li>工作区启动资料曾把 25 人写作规划上限，本方案采用现有运营手册的 24 人作为可交付上限；若 CTO 要求 25 人，必须先重新核定分组、助教和环境容量。</li><li>推荐配置：1 名主讲 + 2 名助教；另设 Delivery-Lead 和 Tech-Ops 的运营职责。</li><li>C-Bridge 与 A-Tech 是学习轨道，不是运营权限，也不自动代表能力等级。</li></ul>
+<h3 id="section-20" data-heading="true">3.3 两条学习轨道</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">轨道</th><th scope="col">适合对象</th><th scope="col">重点任务</th><th scope="col">能力边界</th></tr></thead><tbody><tr><td>C-Bridge</td><td>业务、产品、咨询、实施、运营及技术基础较弱但业务理解较强的学员</td><td>访谈、流程、知识整理、测试、验收、培训、限定配置和证据整理</td><td>在脚手架内完成限定任务；不宣称具备独立系统设计和深度编码能力</td></tr><tr><td>A-Tech</td><td>有编程、API、Git、容器或系统集成基础的学员</td><td>服务、检索、工具契约、状态、幂等、部署、日志、恢复和评测</td><td>对本人技术工作包承担更深实现与调试责任；仍需用业务和交付证据证明 FDE 能力</td></tr></tbody></table></div>
+<p>分轨依据是可观察诊断任务，不依据学历、学校、公司标签、自称经验或“看起来像技术人”。轨道可以在完成项目证据后调整，但不追溯改写历史结果。</p>
+<h3 id="section-21" data-heading="true">3.4 每场固定教学闭环</h3>
+<p>每场 4 小时统一采用以下结构：</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">环节</th><th scope="col">时间</th><th scope="col">教学动作</th></tr></thead><tbody><tr><td>现场触发</td><td>15 分钟</td><td>给出客户简报、失败日志或新的约束，先让学员作判断</td></tr><tr><td>微课讲解</td><td>35 分钟</td><td>只讲完成本场任务所需的核心概念和方法</td></tr><tr><td>教师示范</td><td>25 分钟</td><td>展示一个完整但不完美的案例，故意保留一个可讨论缺陷</td></tr><tr><td>小组实训</td><td>90 分钟</td><td>小组协作，角色轮换，完成项目任务</td></tr><tr><td>评审与红队</td><td>35 分钟</td><td>另一组扮演客户、IT、安全或业务用户，提出反对意见</td></tr><tr><td>证据关闭</td><td>20 分钟</td><td>保存版本、运行记录、失败记录、修改差异和个人责任</td></tr><tr><td>出门票</td><td>20 分钟</td><td>每人回答“今天改变了什么判断、还有什么未验证、下一步是什么”</td></tr></tbody></table></div>
+<p>课堂不是“听完讲解才开始做”，而是先暴露判断，再用知识修正判断。</p>
+<h3 id="section-22" data-heading="true">3.5 教学中的现场干扰卡</h3>
+<p>教师在每周至少注入一张干扰卡，用于训练心智和现场反应：</p>
+<ul class="content-list"><li>业务负责人突然把范围扩大为“全公司 AI 化”；</li><li>数据 owner 只允许提供脱敏样本；</li><li>IT 发现旧系统没有接口；</li><li>安全部门要求数据不出域；</li><li>销售已经承诺两周上线；</li><li>一线用户说现有工具比新系统好用；</li><li>模型在关键问题上无依据作答；</li><li>API 超时、费用超预算、工具返回脏字段；</li><li>管理层要求全自动，但流程存在不可回滚动作。</li></ul>
+<p>学员必须记录触发事实、影响、选项、推荐、暂缓事项和升级责任人，不能用“换一个模型”作为默认答案。</p>
+<hr class="section-rule">
+<h2 id="section-23" data-heading="true">4. 三个贯穿项目</h2>
+<h3 id="section-24" data-heading="true">4.1 PRJ-A：企业知识 Agent</h3>
+<p><strong>训练阶段：第 1-4 周。</strong></p>
+<p>场景：内部支持团队需要从脱敏产品手册、制度、FAQ 和已关闭工单中回答员工问题，并展示可定位来源。</p>
+<p>必须实现：</p>
+<ul class="content-list"><li>文档清单、来源 ID、版本和 owner；</li><li>清洗、切分、元数据和权限过滤；</li><li>30 条固定查询集；</li><li>有来源回答、无依据拒答、冲突材料转人工；</li><li>错误分类、评测、日志、反馈和版本记录。</li></ul>
+<p>明确不做：</p>
+<ul class="content-list"><li>不把所有公司文件无差别塞进知识库；</li><li>不在无授权情况下展示受限内容；</li><li>不把无来源的模型猜测当成事实；</li><li>不接入真实生产系统。</li></ul>
+<h3 id="section-25" data-heading="true">4.2 PRJ-B：企业流程 Agent</h3>
+<p><strong>训练阶段：第 5-6 周。</strong></p>
+<p>场景：脱敏客户支持升级流程需要分类请求、检索知识、生成处理建议、调用模拟工单工具，并在人审后更新状态。</p>
+<p>必须实现：</p>
+<ul class="content-list"><li>现状流程和目标流程；</li><li>工具/API 契约、字段映射、状态机；</li><li>request_id、幂等键、重试上限、降级和人工队列；</li><li>超时、瞬时失败、永久失败、脏字段、重复请求和乱序状态；</li><li>重放、对账、日志追踪和回滚。</li></ul>
+<p>明确不做：</p>
+<ul class="content-list"><li>不让 Agent 在无人确认下执行高风险动作；</li><li>不以“显示成功”掩盖工具实际失败；</li><li>不允许重复请求造成第二次副作用；</li><li>不把流程图上的箭头当成已完成集成。</li></ul>
+<h3 id="section-26" data-heading="true">4.3 PRJ-C：陌生业务 MVD 挑战</h3>
+<p><strong>训练阶段：第 5-8 周，最终认证加训继续使用。</strong></p>
+<p>每组从以下场景中选择一个，或由导师发放等价简报：</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">场景</th><th scope="col">建议入口</th><th scope="col">首批禁止事项</th></tr></thead><tbody><tr><td>30 人销售公司</td><td>客户字段统一、跟进纪要草稿、下一步提醒</td><td>自动承诺价格、条款和折扣</td></tr><tr><td>200 人制造企业</td><td>工单分类、异常总结、历史案例检索、知识库更新</td><td>自动排产、自动改工艺参数、直接控制安全产线</td></tr><tr><td>B2B SaaS 客服</td><td>工单分类、知识检索、回复草稿、人工审核</td><td>未经审核自动对外承诺或关单</td></tr><tr><td>金融客户经理</td><td>内部知识检索、研报摘要、材料完整性检查</td><td>授信、理赔、投顾等终局决策</td></tr><tr><td>医疗流程</td><td>临床文书草稿、病案质控、导诊信息整理</td><td>诊断、用药和其他临床终局决策</td></tr></tbody></table></div>
+<p>PRJ-C 不追求“功能最多”，而追求在 60-90 天可控范围内完成一个能被真实用户试用、能被指标验收、能被后续复制的 MVD。</p>
+<h3 id="section-27" data-heading="true">4.4 个人贡献合同</h3>
+<p>每位学员在三个项目中都必须领取至少一个可验收工作包，并保留以下唯一证据链：</p>
+<blockquote><p>requirement_id → task_id → owner → change_ref → normal_test → failure_test → evidence_ref → acceptance_id → close_status</p></blockquote>
+<p>以下不计为个人贡献：</p>
+<ul class="content-list"><li>仅出席；</li><li>只在群里口头协助；</li><li>只有团队截图；</li><li>无法解释的 AI 生成内容；</li><li>只写名字，没有本人修改、运行和失败证据。</li></ul>
+<hr class="section-rule">
+<h2 id="section-28" data-heading="true">5. 16 场核心实训课表</h2>
+<h3 id="section-29" data-heading="true">第 1 周：从“想做 AI”到可验收问题</h3>
+<h4 id="section-30" data-heading="true">L2-S01｜FDE 的责任边界与结果意识</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：FDE 与售前、顾问、产品经理、软件工程师、实施工程师的边界；4C；Demo、PoC、MVD、生产系统的区别；六项能力与五级成长路径；为什么“功能完成”不等于“价值完成”。</li><li><strong>怎么设计</strong>：开场给出“公司要全面使用 AI”的一句话简报。学员先各自写答案，再分组把它改写成一个用户、一个任务、一个结果。教师用一份“功能很多但没人使用”的反例，带出结果、采用和资产沉淀。</li><li><strong>本节目标</strong>：学员能用 60 秒说明用户、任务、AI 辅助点、人工责任和至少两项不适用边界。</li><li><strong>学员产出</strong>：项目章程 v1、FDE 责任边界卡、利益相关者初表、个人能力基线、个人任务合同 v1。</li><li><strong>通过标准</strong>：业务结果可观察；范围足够窄；材料和权限边界写出；每人有唯一可验收任务。</li><li><strong>课后任务</strong>：选定一个真实岗位或导师发放的岗位简报，记录其一天中最重复、最耗时或最易出错的工作。</li></ul>
+<h4 id="section-31" data-heading="true">L2-S02｜客户发现、访谈与流程观察</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：Discovery 的九类问题：业务目标、角色与流程、痛点量化、数据和系统、MVP、指标、安全、试点与推广、产品化；访谈和观察的区别；事实、假设、愿望和待验证问题。</li><li><strong>怎么设计</strong>：三人轮换扮演业务用户、FDE、观察员。用户卡中故意混入“我想要一个 Agent”“老板说必须上 AI”等愿望，FDE 不能直接推荐工具，只能追问实际动作和失败代价。</li><li><strong>本节目标</strong>：学员能问出谁在什么流程中做什么、输入从哪里来、输出给谁、何时需要审核、异常如何升级。</li><li><strong>学员产出</strong>：访谈提纲、访谈纪要、角色地图、现状流程图、事实/假设/问题日志。</li><li><strong>通过标准</strong>：至少识别用户、业务 owner、系统 owner、数据 owner 和潜在否决方；流程图有起止、输入、输出、审核和异常。</li><li><strong>课后任务</strong>：完成一次真实岗位访谈或一份等价高还原访谈，并标注无法确认的事实。</li></ul>
+<h3 id="section-32" data-heading="true">第 2 周：场景判断、ROI 与 MVD</h3>
+<h4 id="section-33" data-heading="true">L2-S03｜场景筛选、PSF 与 ROI 粗算</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：高频、高价值、边界清楚、数据可得、风险可控五项评分；Pain-Economics-Feasibility；增收、降本、提速、提质、降风险和资产沉淀六类价值；基线、目标值和证据来源。</li><li><strong>怎么设计</strong>：给出 8 个候选场景，让学员先按直觉排序，再用评分卡重排。教师故意提供一个“演示很酷但数据拿不到”的场景和一个“看起来普通但每天发生”的场景，要求学员写出暂缓理由。</li><li><strong>本节目标</strong>：学员能把“提升效率”拆成一个具体任务、一个主要指标、一个业务 owner 和一个可复核的 ROI 假设。</li><li><strong>学员产出</strong>：场景评分卡、ROI 基线与假设表、优先级图、MVD Brief、范围内/范围外清单、No-go 清单。</li><li><strong>通过标准</strong>：只选一个主流程；指标不是“调用次数”或“用户觉得不错”；数据、权限、风险和 owner 具名；首个结果可在 60-90 天内验证。</li><li><strong>课后任务</strong>：将 ROI 中每个参数标注为已知、估计或待客户确认，不允许把估计写成事实。</li></ul>
+<h4 id="section-34" data-heading="true">L2-S04｜解决方案表达与系统边界</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：规则、传统软件、RAG、Agent、Workflow 的适用边界；两种以上方案比较；入口、身份认证、数据、检索、模型、工具、审批、日志、部署、评测和回滚的架构骨架；如何向业务负责人和技术负责人分别表达。</li><li><strong>怎么设计</strong>：小组为同一问题设计“低技术风险方案”和“高自动化方案”，再让客户角色选择。教师追加“不能接某个旧系统”和“必须数据不出域”的约束，观察学员是否会做减法。</li><li><strong>本节目标</strong>：学员能解释为什么选择某种实现方式，也能明确哪些能力暂缓、哪些动作必须人工确认。</li><li><strong>学员产出</strong>：目标流程图、方案比较表、系统架构草图、RACI、依赖与风险清单、验收基线。</li><li><strong>通过标准</strong>：至少两个方案有取舍；范围内需求都能追到验收条件；高风险动作有人审；技术、业务和交付责任清楚。</li><li><strong>课后任务</strong>：为项目建立版本化决策记录，写出一个“如果数据/接口/预算不成立，就如何降级”的备选路径。</li></ul>
+<h3 id="section-35" data-heading="true">第 3 周：数据准备与知识工程</h3>
+<h4 id="section-36" data-heading="true">L2-S05｜数据可用性、治理与安全前置</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：AI-ready data；数据源盘点、质量、版本、时效性、主记录、脱敏、分类分级、最小权限、访问与审计；企业知识的公开层、私有结构化数据层和隐性经验层。</li><li><strong>怎么设计</strong>：发放一组混杂了旧版本文档、重复文件、个人信息、无 owner 表格和聊天记录的材料。学员先做红/黄/绿 readiness 评估，再决定哪些进入课程沙箱。</li><li><strong>本节目标</strong>：学员能说明每份材料能否使用、谁授权、多久更新、出现冲突谁裁定，以及哪些内容必须排除。</li><li><strong>学员产出</strong>：数据源清单、数据 owner/权限矩阵、敏感信息与脱敏记录、质量问题清单、迷你数据计划。</li><li><strong>通过标准</strong>：每个来源有用途、版本、owner、权限和更新时间；不存在密钥和未脱敏敏感信息；红色项不能偷偷进入系统。</li><li><strong>课后任务</strong>：从一份“数据拿不到”的事件卡中，写出不依赖该数据的替代验证方案。</li></ul>
+<h4 id="section-37" data-heading="true">L2-S06｜知识单元、切分、元数据、FAQ 与 SOP</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：知识库不是文件夹；知识单元的边界、上下文和粒度；元数据、标签、权限过滤；FAQ、SOP、案例和隐性经验的结构化；冲突、过期和待确认知识；维护责任。</li><li><strong>怎么设计</strong>：同一份手册分别交给三组处理，比较“按页切分”“按语义任务切分”和“按问题-答案切分”的检索差异。教师注入一条过期 SOP，让学员决定拒答、提示版本还是转人工。</li><li><strong>本节目标</strong>：学员能将散乱资料转成可检索、可授权、可更新、可追溯的知识资产。</li><li><strong>学员产出</strong>：知识资产包、材料索引、元数据字典、至少 10 条 FAQ、1 条完整 SOP、策展/清洗记录、更新机制。</li><li><strong>通过标准</strong>：回答可以追到来源 ID；每个知识单元有版本与 owner；冲突和过期材料有处理规则；维护责任不是“以后有人维护”。</li><li><strong>课后任务</strong>：用 5 个真实或模拟问题检查知识包是否真的支持业务任务，而不是只看文档数量。</li></ul>
+<h3 id="section-38" data-heading="true">第 4 周：RAG 构建、评测与修复</h3>
+<h4 id="section-39" data-heading="true">L2-S07｜从材料到可运行的 RAG</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：解析、切分、Embedding、向量/关键词检索、混合检索、重排、查询改写、权限过滤、引用、无答案处理；低代码路径和代码路径的共同接口。</li><li><strong>怎么设计</strong>：教师先用同一材料跑一个“能回答但不能解释”的 RAG v0，再让学员补上来源、版本和无答案分支。A-Tech 负责检索或服务改动，C-Bridge 负责材料、元数据、查询和证据。</li><li><strong>本节目标</strong>：学员能解释一次回答经过了什么链路，知道问题发生在材料、检索、生成、引用还是权限层。</li><li><strong>学员产出</strong>：RAG v0、检索链路图、材料/元数据索引、输入输出 Schema、运行记录、冒烟测试。</li><li><strong>通过标准</strong>：主链路可重复；回答只引用索引内的来源；无依据或冲突问题拒答/转人工；本人改动和运行证据可定位。</li><li><strong>课后任务</strong>：提交一条正常测试和一条失败测试，分别记录输入、预期、实测、证据和版本。</li></ul>
+<h4 id="section-40" data-heading="true">L2-S08｜评估集、Bad Case 与回归</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：Golden Set；检索命中、答案正确性、引用完整性、拒答、越权、延迟、成本和用户修改率；LLM-as-a-Judge 的局限；错误分类与最小修复；版本回归。</li><li><strong>怎么设计</strong>：运行 30 条固定查询和至少 8 条边界/失败案例，教师注入坏文档、冲突材料、越权查询、无答案和引用不存在。严禁删除失败或改写预期来制造“通过”。</li><li><strong>本节目标</strong>：学员能固定输入复现失败，定位失败层，提交最小修改，并证明受影响案例已回归。</li><li><strong>学员产出</strong>：30 条查询集、失败清单、分层评测报告、修订记录、受影响回归结果、Bad Case 分类。</li><li><strong>通过标准</strong>：固定集全部实跑；关键越权和无依据输出被阻断；至少一次失败可复现、修订、回归；未关闭问题有 owner 和状态。</li><li><strong>课后任务</strong>：把一个 Bad Case 改写成未来可复用的评估题，并说明它属于哪种错误类别。</li></ul>
+<h3 id="section-41" data-heading="true">第 5 周：Agent、Workflow 与工具契约</h3>
+<h4 id="section-42" data-heading="true">L2-S09｜选择 RAG、Agent、Workflow 还是规则</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：RAG 的知识访问边界；Agent 的规划和工具调用；Workflow 的确定性编排；规则/软件的稳定性与可解释性；人机协作层级：建议、审核、有限执行、自动执行。</li><li><strong>怎么设计</strong>：同一个工单流程分别用聊天、RAG、Workflow 和 Agent 方案设计，比较可控性、灵活性、成本、审计和维护。教师用一个“高风险动作”迫使学员增加人工确认。</li><li><strong>本节目标</strong>：学员能为每个步骤选择合适的执行方式，并说明为什么不把全部工作交给 Agent。</li><li><strong>学员产出</strong>：方式选择记录、现状/目标流程、工具清单、人工介入点、状态图、风险与验收基线。</li><li><strong>通过标准</strong>：步骤边界、责任人和状态可解释；高风险动作有审批；不存在“Agent 自己决定一切”的空泛设计。</li><li><strong>课后任务</strong>：为每个工具写一条“允许做什么”和一条“绝对不能做什么”。</li></ul>
+<h4 id="section-43" data-heading="true">L2-S10｜工具/API 契约、字段映射、状态与幂等</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：工具契约、Schema、必填和枚举、错误码、超时；request_id、幂等键、状态持久化、人工队列；字段映射、数据一致性和重放。</li><li><strong>怎么设计</strong>：给出一个模拟工单 API，故意隐藏字段说明。学员先根据实际样例补契约，再运行正常请求、人工接管和 Schema 错误。</li><li><strong>本节目标</strong>：学员能沿一个 request_id 解释输入校验、工具调用、状态转换、人工审批和最终记录。</li><li><strong>学员产出</strong>：API/工具契约、字段映射表、状态机、幂等设计、正常运行证据、错误返回说明。</li><li><strong>通过标准</strong>：错误行为写在契约中；重复 request_id 不产生第二次副作用；人审前不写入高风险状态；本人任务有运行证据。</li><li><strong>课后任务</strong>：设计一个“客户端重试三次但服务端只允许一次写入”的测试。</li></ul>
+<h3 id="section-44" data-heading="true">第 6 周：故障恢复、集成与生产化</h3>
+<h4 id="section-45" data-heading="true">L2-S11｜故障注入、重试、降级、重放与对账</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：瞬时失败与永久失败；有限重试、退避、超时、断路、错误队列、人工接管、重放；脏字段、乱序状态、重复请求和对账；恢复后如何证明没有副作用。</li><li><strong>怎么设计</strong>：教师依次注入超时、5xx、空字段、重复请求、乱序回调和工具返回“假成功”。每组必须在不改动预期的前提下，记录现象、状态、修复和回归。</li><li><strong>本节目标</strong>：学员能让故障显式失败、可观测、可恢复，并能对账。</li><li><strong>学员产出</strong>：故障注入记录、错误/重放队列、恢复设计、对账报告、修订差异、失败回归。</li><li><strong>通过标准</strong>：超时不能显示成功；重试有上限；重复副作用为 0；所有差异有状态、owner 和关闭决定。</li><li><strong>课后任务</strong>：写一页“失败不是异常，而是产品行为”的说明，面向非技术业务 owner 解释。</li></ul>
+<h4 id="section-46" data-heading="true">L2-S12｜部署、权限、日志、成本与回滚</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：Docker/环境隔离、配置与密钥、健康检查、RBAC/ABAC、审计、关联日志、追踪、延迟、成本、SLA/SLO、版本发布、回滚、内网/私有化/数据不出域。</li><li><strong>怎么设计</strong>：小组交换环境部署，作者不能口头补充未写在 Runbook 中的步骤。教师安排一次健康检查失败和一次回滚演练，观察学员是否保留证据。</li><li><strong>本节目标</strong>：学员能让第三方从干净环境启动系统，并在失败后恢复到已知安全版本。</li><li><strong>学员产出</strong>：部署包、环境说明、健康检查、日志查询说明、权限/密钥清单、成本与延迟记录、发布/回滚记录、Runbook。</li><li><strong>通过标准</strong>：第三方冷启动成功；密钥不入库、不进截图和日志；健康检查能发现关键依赖失败；回滚有版本和责任人。</li><li><strong>课后任务</strong>：完成一次“服务不可用时的本地/模拟替代路径”，标注哪些结果尚未被实时服务验证。</li></ul>
+<h3 id="section-47" data-heading="true">第 7 周：PoC、验收、交付与采用</h3>
+<h4 id="section-48" data-heading="true">L2-S13｜从 Demo 到 MVD/PoC</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：Demo、PoC、MVD、生产的证据差异；PoC 的假设、范围、时间、数据、用户、指标、风险和决策门；业务指标与系统指标的关系。</li><li><strong>怎么设计</strong>：每组向“客户委员会”汇报 10 分钟，委员会只允许问三个问题：解决哪一个业务约束、如何证明结果、失败时怎么办。教师让学员把“AI 查询次数”替换成流程结果指标。</li><li><strong>本节目标</strong>：学员能写出一个小而真的试点，而不是一个大而空的 AI 规划。</li><li><strong>学员产出</strong>：MVD/PoC 计划、基线与目标表、3 个阶段 Gate、Demo 故事板、验收矩阵、风险与依赖。</li><li><strong>通过标准</strong>：主指标绑定真实工作流；用户、数据、owner、验收人和时间具名；明确什么已证明、什么未证明、什么暂缓。</li><li><strong>课后任务</strong>：把方案分别写成一页业务版和一页技术版，内容一致但表达对象不同。</li></ul>
+<h4 id="section-49" data-heading="true">L2-S14｜用户测试、培训、RACI 与上线交接</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：UAT、用户试用、反馈和修改；培训与采用；冠军用户；多线程沟通；业务 owner、IT、安全、法务、财务、SME、超级用户和变更负责人；上线清单与问题关闭。</li><li><strong>怎么设计</strong>：一组演示，另一组分别扮演一线用户、IT、安全和管理层。用户必须真实操作一条任务，不能只看 Demo；教师注入“用户觉得不好用”的反馈。</li><li><strong>本节目标</strong>：学员能让用户完成任务、记录反馈、决定修复/不修复/延期，并完成交接。</li><li><strong>学员产出</strong>：用户测试记录、反馈与问题清单、培训材料、上线检查表、RACI、交接包、未关闭问题表。</li><li><strong>通过标准</strong>：用户能完成最小任务；反馈有证据和责任状态；上线不依赖作者记忆；未关闭问题有决定和处理时间。</li><li><strong>课后任务</strong>：录制或现场完成一次 5 分钟用户培训，删除所有“模型很强”的空洞表述。</li></ul>
+<h3 id="section-50" data-heading="true">第 8 周：运营、产品化与最终项目评审</h3>
+<h4 id="section-51" data-heading="true">L2-S15｜上线后的监控、Bad Case 与持续迭代</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：使用、质量、业务、风险、成本和资产六类指标；日志和反馈；Bad Case 进入评估集；知识库刷新、模型/提示词/工作流版本；SLA/SLO、告警、漂移和月度复盘。</li><li><strong>怎么设计</strong>：教师给出“上线后新鲜感消失、使用量下降、错误无人记录”的事件。学员不能只提出“再培训一次”，必须找出行为、流程、产品和系统层原因。</li><li><strong>本节目标</strong>：学员能设计一个可持续的运营闭环，而不是把上线作为项目终点。</li><li><strong>学员产出</strong>：运营指标板、Bad Case 分类、反馈处理流程、迭代 Backlog、版本策略、月度复盘模板。</li><li><strong>通过标准</strong>：每个指标有证据来源和 owner；Bad Case 可转为测试；更新有版本和回归；成本与采用一起看。</li><li><strong>课后任务</strong>：提出一个“停止、继续或扩大”的决策，并写出需要补充的证据。</li></ul>
+<h4 id="section-52" data-heading="true">L2-S16｜产品化 Gate、第三方复现与最终答辩</h4>
+<ul class="content-list"><li><strong>讲什么</strong>：定制与产品化的边界；模板、组件、连接器、评估集、部署包、培训页和产品反馈；从第一客户到后续客户的复用；最终项目答辩规则。</li><li><strong>怎么设计</strong>：每组冻结候选版本，由另一组从干净副本启动并随机抽取一条正常和一条失败路径；答辩时加入一个临时范围变化，考察现场秩序和诚实边界。</li><li><strong>本节目标</strong>：学员能证明项目可复核、个人贡献可定位、关键失败可解释，并能从项目中提炼至少一个可复用资产。</li><li><strong>学员产出</strong>：完整项目包、第三方复现记录、资产复用包、产品化 Gate、复盘报告、个人证据索引、10 分钟最终答辩。</li><li><strong>通过标准</strong>：六道 MVP Gate 与团队 rubric 通过；每人个人工作包证据链完整；第三方可启动和复现；至少一个资产被他人使用并通过回归。</li><li><strong>课后任务</strong>：根据导师反馈冻结“待认证证据清单”，进入第 9-12 周现场认证加训。</li></ul>
+<hr class="section-rule">
+<h2 id="section-53" data-heading="true">6. 第 9-12 周现场认证加训</h2>
+<p>核心课结束后，不直接发 L3-L4。认证加训要求学员把能力从“课程沙箱内完成”迁移到“陌生问题中组织交付”。</p>
+<h3 id="section-54" data-heading="true">P01｜真实岗位访谈与诊断</h3>
+<ul class="content-list"><li><strong>任务</strong>：访谈一个真实岗位，或使用导师提供的高度还原简报；至少完成一次追问和一次现场观察/任务回放。</li><li><strong>目标</strong>：证明学员能从业务语言中识别真实问题，而不是把岗位愿望改写成工具需求。</li><li><strong>产出</strong>：岗位画像、访谈纪要、流程图、问题/假设清单、利益相关者图、数据与权限清单。</li><li><strong>通过线</strong>：能区分使用者、业务 owner、采购/决策者、系统 owner 和数据 owner；至少提出一个暂缓或不做的建议。</li></ul>
+<h3 id="section-55" data-heading="true">P02｜MVD 方案、ROI 与验收基线</h3>
+<ul class="content-list"><li><strong>任务</strong>：把诊断结果转成一个 60-90 天可验证的 MVD；至少比较两个方案。</li><li><strong>目标</strong>：证明学员能做范围、经济性、风险和技术边界的综合判断。</li><li><strong>产出</strong>：MVD Brief、ROI 假设、方案比较、架构草图、RACI、风险/依赖、验收指标、数据计划。</li><li><strong>通过线</strong>：主指标由业务 owner 认可或明确标记待确认；范围内每项需求都能追踪到测试和验收；高风险动作有人审、可回滚。</li></ul>
+<h3 id="section-56" data-heading="true">P03｜试点战争室与上线复盘</h3>
+<ul class="content-list"><li><strong>任务</strong>：教师随机注入数据延迟、用户不采用、接口不可用、效果退化、预算不足或责任不清等事件。</li><li><strong>目标</strong>：观察学员在压力下是否先稳住问题、证据和责任，再做下一步决策。</li><li><strong>产出</strong>：事件时间线、决策记录、风险升级、变更记录、试运行指标、用户反馈、失败复盘、继续/停止/扩大建议。</li><li><strong>通过线</strong>：不隐瞒重大风险；能把技术失败翻译成业务影响；能提出最小修复、暂缓和升级路径。</li></ul>
+<h3 id="section-57" data-heading="true">P04｜L3-L4 认证答辩与资产复用</h3>
+<ul class="content-list"><li><strong>任务</strong>：学员先进行 10 分钟业务答辩，再进行 10 分钟技术/交付答辩；另一名成员使用其资产完成冷启动或迁移。</li><li><strong>目标</strong>：判断学员是否达到可进入项目候选池的 L3，及是否达到具备资产复用证据的 L4。</li><li><strong>产出</strong>：最终项目包、个人贡献包、资产复用记录、回归测试、版本说明、复盘和个人发展建议。</li><li><strong>通过线</strong>：L3 需满足业务、产品、交付能力不低于 3 分，并具备完整诊断、ROI、MVD 和验收证据；L4 需满足技术、产品、交付能力不低于 3 分，且至少一项资产被他人实际复用并通过回归。</li></ul>
+<hr class="section-rule">
+<h2 id="section-58" data-heading="true">7. 评估与认证规则</h2>
+<h3 id="section-59" data-heading="true">7.1 六道内部 MVP Gate</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">Gate</th><th scope="col">检查什么</th><th scope="col">最低证据</th></tr></thead><tbody><tr><td>G1 问题与方案</td><td>问题、约束、任务、依赖、责任、替代方案与验收可追踪</td><td>章程、访谈、流程、方案比较、验收基线</td></tr><tr><td>G2 工程实现</td><td>服务契约、实现差异、测试、缺陷复现与回归</td><td>可运行版本、本人修改/配置差异、正常/失败测试</td></tr><tr><td>G3 知识与执行链</td><td>RAG、工具、状态、来源、权限和人工边界可解释</td><td>材料索引、知识包、工具链、状态和引用证据</td></tr><tr><td>G4 集成与恢复</td><td>API/数据映射、一致性、重放、幂等和降级</td><td>故障运行、恢复、对账、重复副作用计数</td></tr><tr><td>G5 运行与评测</td><td>部署、健康检查、日志、评估、版本比较和回归</td><td>冷启动、Runbook、日志、固定集和回归记录</td></tr><tr><td>G6 交付与证据</td><td>Demo、培训、验收、交接、个人贡献和关闭状态</td><td>用户测试、交接包、验收表、个人证据索引</td></tr></tbody></table></div>
+<p>团队通过不能覆盖个人不过，个人通过也不能覆盖团队 Gate 不过。</p>
+<h3 id="section-60" data-heading="true">7.2 100 分项目评分建议</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">维度</th><th scope="col">分值</th><th scope="col">重点</th></tr></thead><tbody><tr><td>业务诊断与场景判断</td><td>15</td><td>真实问题、流程、ROI、范围</td></tr><tr><td>工程与系统集成</td><td>20</td><td>RAG/Workflow/Agent、接口、状态、权限</td></tr><tr><td>评测、可靠性与恢复</td><td>20</td><td>Golden Set、Bad Case、日志、回归、回滚</td></tr><tr><td>交付、采用与组织推动</td><td>15</td><td>用户测试、培训、RACI、问题关闭</td></tr><tr><td>资产沉淀与产品化</td><td>15</td><td>模板、组件、评估集、连接器、复用</td></tr><tr><td>个人证据与现场答辩</td><td>15</td><td>本人贡献、诚实边界、临场决策</td></tr><tr><td><strong>合计</strong></td><td><strong>100</strong></td><td></td></tr></tbody></table></div>
+<h3 id="section-61" data-heading="true">7.3 六项能力评分</h3>
+<p>每项能力 0-4 分：</p>
+<ul class="content-list"><li>0：没有证据；</li><li>1：能解释概念；</li><li>2：在指导下完成；</li><li>3：能够独立完成；</li><li>4：能够复用、优化或带教。</li></ul>
+<p>分数只能辅助判断，不能替代关键证据。</p>
+<h3 id="section-62" data-heading="true">7.4 L3 与 L4 的认定</h3>
+<p><strong>L3 必须同时满足：</strong></p>
+<ul class="content-list"><li>一次真实或高度还原的业务访谈；</li><li>Pain、Economics、Feasibility 判断；</li><li>真实流程图；</li><li>ROI 假设；</li><li>MVD 范围；</li><li>验收指标；</li><li>风险、权限和人工审批点；</li><li>面向客户的 10 分钟答辩；</li><li>业务、产品、交付三项能力不低于 3 分；</li><li>技术能力至少达到在导师指导下完成部署和评测任务。</li></ul>
+<p><strong>L4 必须同时满足：</strong></p>
+<ul class="content-list"><li>一项可复用模板、组件、评估集、连接器或交付手册；</li><li>另一名成员成功复现或使用；</li><li>回归测试记录；</li><li>版本与变更说明；</li><li>项目复盘；</li><li>面向技术和业务双方答辩；</li><li>技术、产品、交付三项能力不低于 3 分；</li><li>至少一项资产有实际复用证据。</li></ul>
+<p>L3 表示可以进入项目候选池，不表示可以独立负责客户；L4 表示可以承担初级 FDE 骨干或项目助理责任，是否就业仍需单独评估。</p>
+<h3 id="section-63" data-heading="true">7.5 一票否决</h3>
+<p>出现下列任一情况，不能认证：</p>
+<ul class="content-list"><li>未授权访问客户数据、生产系统或账号；</li><li>泄露真实个人数据、客户信息、密钥或内部材料；</li><li>虚构项目经历、测试结果、用户反馈或 ROI；</li><li>无法说明系统边界和失败处理；</li><li>绕过人工审批、权限、审计或回滚；</li><li>删除失败案例、修改预期结果或让证据无法复核；</li><li>现场发现重大风险后仍对外作出无依据承诺。</li></ul>
+<h3 id="section-64" data-heading="true">7.6 补做规则</h3>
+<ol class="content-list"><li>保留原失败版本，不删除失败记录。</li><li>只修复已经记录的缺口，提交最小修改差异。</li><li>重新运行受影响的正常和失败测试。</li><li>个人缺口不能由队友的团队证据代替。</li><li>补做通过后，仍保留历史版本和复核记录。</li></ol>
+<hr class="section-rule">
+<h2 id="section-65" data-heading="true">8. 评审重点：同一套标准贯穿准入和结业</h2>
+<p>入学诊断和结业评审都观察五件事：</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">维度</th><th scope="col">合格信号</th><th scope="col">风险信号</th></tr></thead><tbody><tr><td>业务访谈</td><td>先问目标、角色、流程、约束和失败成本</td><td>一上来演示工具</td></tr><tr><td>流程拆解</td><td>能画输入、输出、审核、异常和责任</td><td>只画一个聊天框</td></tr><tr><td>系统意识</td><td>能想到数据源、接口、权限、日志、成本和回滚</td><td>只说“换模型”</td></tr><tr><td>结果意识</td><td>能定义使用、质量、业务、风险和资产指标</td><td>只说“用户觉得好用”</td></tr><tr><td>现场反应</td><td>先记录事实、判断影响、做范围和责任决定</td><td>把混乱归咎于客户或掩盖风险</td></tr></tbody></table></div>
+<p>建议入学采用一个 60 分钟的陌生简报，要求完成：</p>
+<ol class="content-list"><li>5 个关键问题；</li><li>一个优先业务流程；</li><li>用户、输入、输出、审核点和异常；</li><li>数据、权限、接口、部署和安全边界；</li><li>一个两周内可完成的诊断或原型任务。</li></ol>
+<p>诊断结果只用于确定学习支持方式和轨道，不用于按学历、学校、专业或公司背景作代理筛选。</p>
+<hr class="section-rule">
+<h2 id="section-66" data-heading="true">9. 工具与技术路线</h2>
+<h3 id="section-67" data-heading="true">9.1 推荐的教学基线</h3>
+<p>不要求所有学员使用同一个品牌，但要保证接口、证据和评价口径一致。</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">路线</th><th scope="col">建议基线</th><th scope="col">训练重点</th></tr></thead><tbody><tr><td>A-Tech 代码路线</td><td>Python、FastAPI/Flask、PostgreSQL、pgvector 或 Qdrant、LangGraph 或等价编排、Docker、Langfuse/Opik、Promptfoo/DeepEval/Ragas</td><td>服务、检索、状态、工具、日志、评测和部署</td></tr><tr><td>C-Bridge 业务路线</td><td>Dify、n8n、WorkBuddy、百炼或等价低代码/工作流平台</td><td>流程、知识、提示、测试、权限、人工边界、验收和交付</td></tr><tr><td>离线/私有化认知路线</td><td>本地模型或模拟模型、离线文档处理、容器、内网部署、权限和审计</td><td>数据不出域、可替换模型、离线评测、更新与回滚</td></tr></tbody></table></div>
+<h3 id="section-68" data-heading="true">9.2 工具选择的强制问题</h3>
+<p>每组在 S04、S09 和 S12 各回答一次：</p>
+<ul class="content-list"><li>这个工具解决了哪一个明确问题？</li><li>如果换成另一类工具，哪些证据仍然必须保留？</li><li>数据、权限、日志、评测、成本和部署如何处理？</li><li>许可是否允许公司商业交付？</li><li>是否会形成不可接受的供应商锁定？</li></ul>
+<h3 id="section-69" data-heading="true">9.3 工具地图的使用方式</h3>
+<p>OpenFDE 工具地图内容更新快，课程只把它用作分层选型地图，不把 160 多个项目变成学员必学清单。每季度更新一次“推荐、备选、暂停使用”清单；模型选择以质量、延迟、成本、隐私、可部署性和评测结果为依据，而不是以品牌热度为依据。</p>
+<h3 id="section-70" data-heading="true">9.4 开源许可和数据边界</h3>
+<p>每组的项目包必须包含一页：</p>
+<ul class="content-list"><li>使用的模型、平台、库和数据来源；</li><li>许可证及商业交付限制；</li><li>数据是否离开客户域；</li><li>访问者、读写动作、人工审核和审计记录；</li><li>发生泄露或越权时的停止、撤销、轮换和复盘动作。</li></ul>
+<p>课堂可以训练安全设计，但不能替代公司法务、安全团队或客户的正式合规审查。</p>
+<hr class="section-rule">
+<h2 id="section-71" data-heading="true">10. Datawhale / OpenFDE 信号库的学习安排</h2>
+<p>OpenFDE 信号库是一个资料索引，不是一篇可以逐条讲完的教材。它包含大量按公司、岗位、开源项目、案例、媒体、VC、社区、论文和验证状态分类的资料。课程不要求学员机械阅读全部条目，而要求建立“按问题检索、按可信度筛选、按项目验证”的习惯。</p>
+<p>每周一个信号微任务：</p>
+<ol class="content-list"><li>围绕本周项目问题选择 2 条资料；</li><li>标注资料类型、来源级别、是否已验证和适用边界；</li><li>写 300-500 字“对当前项目有什么影响”；</li><li>只把能支持当前决策的内容写入方案，不把趋势文章直接写成客户承诺；</li><li>在第 8 周将 8 周信号整理成一页工具/方法更新卡。</li></ol>
+<p>这样既利用资料库，也避免把“资料数量”误当成学习深度。</p>
+<hr class="section-rule">
+<h2 id="section-72" data-heading="true">11. 教师备课与课堂资产</h2>
+<p>每一场课开课前，教师必须准备：</p>
+<ol class="content-list"><li>一份学员可读的客户简报；</li><li>一份脱敏材料包；</li><li>一份至少包含正常、边界、失败和安全案例的测试包；</li><li>一份故障注入说明；</li><li>一份教师示范版本和已知缺陷；</li><li>一份 C-Bridge 限定任务；</li><li>一份 A-Tech 加深任务；</li><li>一份评分表和标准答案要点；</li><li>一份第三方冷启动说明；</li><li>一份课后复盘表。</li></ol>
+<p>教师不能只准备“能成功的 Demo”。至少三分之一的课堂时间必须用于失败、边界、证据和交付。</p>
+<h3 id="section-73" data-heading="true">11.1 助教反馈格式</h3>
+<p>助教给出的每条反馈必须落到以下四类之一：</p>
+<ul class="content-list"><li>事实缺失：你还不知道什么；</li><li>方案缺陷：哪个边界或取舍不成立；</li><li>证据缺失：哪条结论没有运行/用户/系统证据；</li><li>表达问题：哪位听众听不懂、不能作决定。</li></ul>
+<p>避免使用“感觉不够好”“再优化一下”这类无法执行的评价。</p>
+<hr class="section-rule">
+<h2 id="section-74" data-heading="true">12. 运营节奏和首期测量</h2>
+<h3 id="section-75" data-heading="true">12.1 每周节奏</h3>
+<ul class="content-list"><li>周一：学员提交课前阅读和项目状态；</li><li>周三：教师回答共性问题，个人问题留在项目证据中；</li><li>周六：新知识、现场触发、小组实训；</li><li>周日：故障/评审/交付关闭；</li><li>周日结束：保存版本、运行、失败、求助和未完成项。</li></ul>
+<p>出勤只表示到场，不表示掌握。通过必须有项目和个人证据。</p>
+<h3 id="section-76" data-heading="true">12.2 首期只记录事实，不预填结果</h3>
+<p>建议记录：</p>
+<ul class="content-list"><li>设备和环境首次运行成功率；</li><li>每场实际教学时长；</li><li>助教求助次数、并发峰值和恢复时间；</li><li>固定测试实际执行数量；</li><li>失败路径复现率；</li><li>第三方冷启动成功率；</li><li>个人工作包证据链完整率；</li><li>补做率和各 Gate 失败分布；</li><li>资产被他人复用的次数和失败类型；</li><li>课程结束后 30/60/90 天的项目参与、用户试用和资产继续使用情况。</li></ul>
+<p>首期数据只能说明这批学员和这版课程发生了什么，不能直接推出“最佳师生比”“最佳学时”或“就业率”。</p>
+<hr class="section-rule">
+<h2 id="section-77" data-heading="true">13. 最终交付目录建议</h2>
+<pre><code class="language-text">FDE-MVD-&lt;team_id&gt;/
+├── 00_PROJECT_CHARTER.md
+├── 01_DISCOVERY/
+│   ├── interview_guide.md
+│   ├── interview_notes.md
+│   ├── stakeholder_map.md
+│   ├── current_process.mmd
+│   └── fact_assumption_log.md
+├── 02_SCENARIO/
+│   ├── opportunity_scorecard.csv
+│   ├── roi_baseline.xlsx
+│   ├── mvd_brief.md
+│   └── scope_and_nogo.md
+├── 03_DATA_KNOWLEDGE/
+│   ├── source_index.csv
+│   ├── metadata_dictionary.csv
+│   ├── permission_matrix.csv
+│   ├── curation_log.md
+│   ├── faq.csv
+│   └── sop.md
+├── 04_APP/
+│   ├── io_contract.md
+│   ├── architecture.md
+│   ├── workflow_or_state.md
+│   ├── run_record/
+│   └── app_or_config/
+├── 05_EVAL_RELIABILITY/
+│   ├── golden_set.csv
+│   ├── test_results.csv
+│   ├── failure_list.md
+│   ├── bad_case_taxonomy.md
+│   ├── revision_log.md
+│   └── regression_report.md
+├── 06_DELIVERY/
+│   ├── demo_script.md
+│   ├── user_test.md
+│   ├── training.md
+│   ├── runbook.md
+│   ├── release_checklist.md
+│   ├── rollback.md
+│   └── acceptance_matrix.md
+├── 07_OPERATIONS_PRODUCTIZATION/
+│   ├── metrics.md
+│   ├── dashboard_spec.md
+│   ├── iteration_backlog.md
+│   ├── reusable_asset.md
+│   ├── reuse_record.md
+│   └── project_retro.md
+└── 08_PERSONAL_EVIDENCE/
+    ├── contribution_contract.md
+    ├── change_refs.md
+    ├── normal_tests.md
+    ├── failure_tests.md
+    ├── evidence_index.md
+    └── final_defense.md</code></pre>
+<hr class="section-rule">
+<h2 id="section-78" data-heading="true">14. 课程设计结论</h2>
+<p>这套课程的核心不是让学员“懂更多工具”，而是让学员在每个阶段都留下可复核的东西：</p>
+<blockquote><p>业务问题 → 流程边界 → 数据知识 → 可运行系统 → 评测与恢复 → 用户采用 → 经营结果 → 复用资产</p></blockquote>
+<p>如果某一周只有 Demo、截图和口头汇报，没有测试、失败、权限、日志、用户或资产证据，课程就应该判定为“尚未完成”，而不是用漂亮演示掩盖缺口。</p>
+<hr class="section-rule">
+<h2 id="section-79" data-heading="true">15. 资料依据与使用边界</h2>
+<ul class="content-list"><li><a href="https://datawhaler.feishu.cn/wiki/QdG2wYRESiNoWBkeVzjclRlFnlc" target="_blank" rel="noreferrer noopener">Datawhale FDE 培养方案知识库</a>：五阶段生命周期、技术/业务双路线、专题分享-自主学习-开放实践和项目产出。</li><li><a href="https://openfde.net/zh/docs/what-is-fde" target="_blank" rel="noreferrer noopener">OpenFDE：什么是 FDE</a>：FDE 的现场责任与 4C。</li><li><a href="https://openfde.net/zh/docs/workflow" target="_blank" rel="noreferrer noopener">OpenFDE：FDE 工作流</a>：从场景选择、发现、技术范围、原型、评测、生产、采用、扩展到商业化的 10 步。</li><li><a href="https://openfde.net/zh/docs/capabilities" target="_blank" rel="noreferrer noopener">OpenFDE：能力模型</a>：8 项能力与 4C 映射。</li><li><a href="https://openfde.net/zh/docs/tech-stack" target="_blank" rel="noreferrer noopener">OpenFDE：技术栈</a>：全栈、RAG、Agent/Workflow、评测/可观测、云基础设施/安全。</li><li><a href="https://openfde.net/zh/docs/learning-path" target="_blank" rel="noreferrer noopener">OpenFDE：90 天学习路径</a>：12 周、4 个项目和“不要停在 Demo”的工程要求。</li><li><a href="https://openfde.net/zh/docs/interview" target="_blank" rel="noreferrer noopener">OpenFDE：FDE 面试</a>：编码、系统设计、AI 应用设计、客户发现、权衡和沟通的评估结构。</li><li><a href="https://openfde.net/zh/white-book" target="_blank" rel="noreferrer noopener">OpenFDE：实战白皮书</a>：客户规模、行业红线、切入标准、生产化、组织采用和产品化门槛。</li><li><a href="https://openfde.net/zh/tool-map" target="_blank" rel="noreferrer noopener">OpenFDE：AI 工具地图</a>：工具分层、AI-native 团队、工具选型和产品化资产。</li><li><a href="https://openfde.net/zh/research" target="_blank" rel="noreferrer noopener">OpenFDE：信号库</a>：按主题、来源类型和验证状态组织的研究索引。</li><li>工作区现有 <a href="file:///E:/chuan777/%E6%89%A7%E8%A1%8C%E8%B5%84%E6%96%99/CTO-L1-L4%E8%AE%A4%E8%AF%81%E6%A0%87%E5%87%86.md">FDE L1-L4 认证与考核标准</a>、<a href="file:///E:/chuan777/%E6%89%A7%E8%A1%8C%E8%B5%84%E6%96%99/CTO-MVD%E4%BC%81%E4%B8%9A%E4%BA%A4%E4%BB%98%E6%96%B9%E6%A1%88.md">企业 AI MVD 标准交付方案</a>、<a href="file:///E:/chuan777/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99/%E5%BD%92%E6%A1%A3/02_LAYER2_COURSE.md">现有第二层课程设计</a>和进阶班岗位要求。</li></ul>
+<p>版权注意：工作区中的参考资料\fde-v1.0.6.pdf 明确提示，商业培训或付费内容改编需要取得作者书面许可。本课程应使用自己的案例、讲义、图表和练习；外部资料只做观点依据和阅读引导，不直接复制原文、原图或整段案例。正式对外授课前由公司确认授权、引用和知识产权边界。</p></article>
+      <footer class="document-footer">
+        <div><span class="brand-mark small">F</span><span>FDE 人才培养体系 · 内容源完整保留</span></div>
+        <a href="FDE人才培养体系门户.html">返回体系门户 ↑</a>
+      </footer>
+    </main>
+  </div>
+  <div class="search-status" data-search-status aria-live="polite"></div>
+  <script src="fde-curriculum.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN" data-page="roadmap" data-source="FDE人才培养体系总方案_V1.0.md">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从入门、交付到带队与导师，形成可训练、可评价、可分流、可持续更新的人才路径。">
+  <title>川麒科技 FDE 人才培养体系总方案 · FDE 人才培养体系</title>
+  <link rel="stylesheet" href="fde-curriculum.css">
+</head>
+<body class="document-page tone-cyan">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="FDE人才培养体系门户.html" aria-label="返回 FDE 人才培养体系门户">
+      <span class="brand-mark">F</span><span><b>FDE</b><small>FIELD ENABLED</small></span>
+    </a>
+    <nav class="main-nav" aria-label="文档导航"><a class="nav-link " href="FDE人才培养体系门户.html">体系门户</a><a class="nav-link is-active" href="FDE人才培养体系总方案_V1.0.html">体系总览</a><a class="nav-link " href="FDE入门班课程体系_V1.0.html">入门班</a><a class="nav-link " href="FDE进阶班课程体系_V1.0.html">进阶班</a><a class="nav-link " href="FDE人才培养体系门户.html#scenario-library">场景库</a></nav>
+    <div class="top-actions">
+      <button class="icon-button" type="button" data-action="theme" aria-label="切换主题" title="切换主题">◐</button>
+      <button class="icon-button mobile-only" type="button" data-action="sidebar" aria-label="打开目录">☰</button>
+    </div>
+  </header>
+
+  <div class="reading-progress" data-reading-progress></div>
+  <div class="document-layout">
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-head">
+        <span class="micro-label">DOCUMENT MAP</span>
+        <button class="sidebar-close mobile-only" type="button" data-action="sidebar">×</button>
+      </div>
+      <div class="source-card">
+        <span class="source-dot"></span>
+        <div><span>内容源</span><strong>FDE人才培养体系总方案_V1.0.md</strong></div>
+      </div>
+      <nav class="doc-toc" aria-label="本页目录" data-toc>
+        <a class="toc-link toc-level-2" href="#section-01">0. 先给结论</a><a class="toc-link toc-level-2" href="#section-02">1. 总体培养地图</a><a class="toc-link toc-level-3" href="#section-03">1.1 对应文件</a><a class="toc-link toc-level-2" href="#section-04">2. 各阶段培养目标</a><a class="toc-link toc-level-3" href="#section-05">2.1 L0 基础准备</a><a class="toc-link toc-level-3" href="#section-06">2.2 L1 入门班</a><a class="toc-link toc-level-3" href="#section-07">2.3 L2/L3 进阶核心课</a><a class="toc-link toc-level-3" href="#section-08">2.4 L3/L4 项目认证</a><a class="toc-link toc-level-3" href="#section-09">2.5 L5 FDE 骨干与导师</a><a class="toc-link toc-level-2" href="#section-10">3. 六项能力 × 五级成长矩阵</a><a class="toc-link toc-level-2" href="#section-11">4. 准入、晋级和退出机制</a><a class="toc-link toc-level-3" href="#section-12">4.1 入门班准入</a><a class="toc-link toc-level-3" href="#section-13">4.2 入门班到进阶班</a><a class="toc-link toc-level-3" href="#section-14">4.3 进阶核心课到 L3/L4 认证</a><a class="toc-link toc-level-3" href="#section-15">4.4 未通过处理</a><a class="toc-link toc-level-3" href="#section-16">4.5 退出与重新申请</a><a class="toc-link toc-level-2" href="#section-17">5. 项目与岗位分流</a><a class="toc-link toc-level-2" href="#section-18">6. 训练项目分层</a><a class="toc-link toc-level-3" href="#section-19">6.1 L1：单功能、低风险、强脚手架</a><a class="toc-link toc-level-3" href="#section-20">6.2 L2：完整链路、受控集成、强失败训练</a><a class="toc-link toc-level-3" href="#section-21">6.3 L3-L4：陌生业务、真实指标、第三方复现</a><a class="toc-link toc-level-2" href="#section-22">7. 1251 份信号资料如何纳入体系</a><a class="toc-link toc-level-3" href="#section-23">7.1 不逐条读完会不会影响课程完整性</a><a class="toc-link toc-level-3" href="#section-24">7.2 资料分层</a><a class="toc-link toc-level-3" href="#section-25">7.3 建议建立 Source Ledger</a><a class="toc-link toc-level-3" href="#section-26">7.4 抽样和覆盖方法</a><a class="toc-link toc-level-3" href="#section-27">7.5 学员如何使用信号库</a><a class="toc-link toc-level-2" href="#section-28">8. 课程和资料的更新机制</a><a class="toc-link toc-level-3" href="#section-29">8.1 稳定层</a><a class="toc-link toc-level-3" href="#section-30">8.2 变化层</a><a class="toc-link toc-level-3" href="#section-31">8.3 版本制度</a><a class="toc-link toc-level-2" href="#section-32">9. 师资与导师体系</a><a class="toc-link toc-level-3" href="#section-33">9.1 主讲老师</a><a class="toc-link toc-level-3" href="#section-34">9.2 助教</a><a class="toc-link toc-level-3" href="#section-35">9.3 项目导师</a><a class="toc-link toc-level-2" href="#section-36">10. 培养效果的衡量</a><a class="toc-link toc-level-3" href="#section-37">10.1 课堂层</a><a class="toc-link toc-level-3" href="#section-38">10.2 项目层</a><a class="toc-link toc-level-3" href="#section-39">10.3 人才层</a><a class="toc-link toc-level-2" href="#section-40">11. 首期落地计划</a><a class="toc-link toc-level-3" href="#section-41">T-4 周：准备</a><a class="toc-link toc-level-3" href="#section-42">T-2 周：小范围试教</a><a class="toc-link toc-level-3" href="#section-43">T-1 周：开班闸门</a><a class="toc-link toc-level-3" href="#section-44">课程期间</a><a class="toc-link toc-level-3" href="#section-45">课程结束后</a><a class="toc-link toc-level-2" href="#section-46">12. 最终原则</a><a class="toc-link toc-level-2" href="#section-47">13. 主要资料</a>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="micro-label">SOURCE INTEGRITY</span>
+        <p>本页由 Markdown 原文逐段转换，保留标题、表格、链接、代码块与原始数据。</p>
+        <span class="source-size">19,916 bytes UTF-8</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="doc-hero" data-search-scope>
+        <div class="hero-orbit" aria-hidden="true"><span></span><i></i><b></b></div>
+        <div class="eyebrow"><span class="pulse"></span>FDE · TALENT SYSTEM</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="overline">系统总览</p>
+            <h1>川麒科技 FDE 人才培养体系总方案</h1>
+            <p class="hero-subtitle">从入门、交付到带队与导师，形成可训练、可评价、可分流、可持续更新的人才路径。</p>
+            <div class="hero-actions">
+              <button class="primary-button" type="button" data-action="print">打印 / 导出 PDF <span>↗</span></button>
+              <label class="search-box"><span>⌕</span><input type="search" placeholder="搜索本页内容" data-search aria-label="搜索本页内容"></label>
+            </div>
+          </div>
+          <div class="hero-stats" aria-label="文档指标"><div class="hero-stat"><span>成长阶段</span><strong>L0 → L5</strong></div><div class="hero-stat"><span>能力维度</span><strong>6 项</strong></div><div class="hero-stat"><span>训练单元</span><strong>28 个</strong></div></div>
+        </div>
+      </section>
+
+      <div class="mobile-toc-bar mobile-only"><span>本页目录</span><button type="button" data-action="sidebar">查看章节 <span>→</span></button></div>
+      <article id="article" class="markdown-body" data-article data-search-scope><p>版本：V1.0（总体系建议稿）</p>
+<p>目标：建立从 AI 应用入门，到企业 AI 项目交付，再到 FDE 骨干和带教者的长期培养路径</p>
+<hr class="section-rule">
+<h2 id="section-01" data-heading="true">0. 先给结论</h2>
+<p>完整的 FDE 人才培养不能只有一门课，也不能只按“会不会某个工具”分级。建议建立五段式路径：</p>
+<blockquote><p>基础准备 → 入门班 L1 → 进阶班 L2/L3 → 项目认证 L3/L4 → FDE 骨干/带教 L5</p></blockquote>
+<p>其中：</p>
+<ul class="content-list"><li>入门班解决“会不会把一个 AI 任务做成可复核 Demo”；</li><li>进阶班解决“能不能把 AI 放进真实流程并完成受控交付”；</li><li>项目认证解决“能不能在陌生业务中发现问题、算价值、推上线、做复盘”；</li><li>L5 培养解决“能不能带团队、做产品化、推动组织和客户持续采用”。</li></ul>
+<p>上一版只完成了进阶班，本次新增：</p>
+<ol class="content-list"><li>独立的入门班课程体系；</li><li>入门到进阶的晋级规则；</li><li>L3-L4 项目认证加训；</li><li>L5 FDE 骨干与导师培养；</li><li>项目/岗位分流标准；</li><li>1251 份信号资料的分层、抽样和更新机制。</li></ol>
+<hr class="section-rule">
+<h2 id="section-02" data-heading="true">1. 总体培养地图</h2>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">阶段</th><th scope="col">建议时长</th><th scope="col">训练形态</th><th scope="col">学员主要身份</th><th scope="col">核心结果</th></tr></thead><tbody><tr><td>L0 基础准备</td><td>0.5-1 周</td><td>自学、预检、诊断</td><td>学习者</td><td>能使用电脑、文件、浏览器和基础 AI 工具，理解安全边界</td></tr><tr><td>L1 入门班</td><td>4 周、8 场</td><td>周末课堂 + Demo 实训</td><td>AI 应用执行者</td><td>完成一个可运行、可测试、可复现的垂直功能 Demo</td></tr><tr><td>L2/L3 进阶核心课</td><td>8 周、16 场</td><td>项目制课堂 + 三个实训项目</td><td>项目协作者</td><td>能处理知识、流程、集成、评测、部署和交付证据</td></tr><tr><td>L3/L4 项目认证</td><td>4 周</td><td>真实岗位/高还原项目 + 认证工作坊</td><td>初级 FDE 候选人</td><td>能做诊断、MVD、ROI、试点复盘和资产复用</td></tr><tr><td>L5 骨干/导师</td><td>12-24 周</td><td>真实项目带教、客户复盘、产品化</td><td>FDE 骨干/交付负责人</td><td>能带 pod、推动采用、建设模板和培养下一批学员</td></tr></tbody></table></div>
+<p>完整路径约 6-9 个月。入门班和进阶核心课可以作为独立产品交付，但 L3-L4 资格必须经过项目认证，不能仅凭课程出勤或考试成绩授予。</p>
+<h3 id="section-03" data-heading="true">1.1 对应文件</h3>
+<ul class="content-list"><li><a href="FDE入门班课程体系_V1.0.html">入门班课程体系</a></li><li><a href="FDE进阶班课程体系_V1.0.html">进阶班课程体系</a></li><li><a href="file:///E:/chuan777/%E6%89%A7%E8%A1%8C%E8%B5%84%E6%96%99/CTO-L1-L4%E8%AE%A4%E8%AF%81%E6%A0%87%E5%87%86.md">现有 L1-L4 认证标准</a></li><li><a href="file:///E:/chuan777/%E6%89%A7%E8%A1%8C%E8%B5%84%E6%96%99/CTO-MVD%E4%BC%81%E4%B8%9A%E4%BA%A4%E4%BB%98%E6%96%B9%E6%A1%88.md">企业 AI MVD 标准交付方案</a></li></ul>
+<hr class="section-rule">
+<h2 id="section-04" data-heading="true">2. 各阶段培养目标</h2>
+<h3 id="section-05" data-heading="true">2.1 L0 基础准备</h3>
+<p><strong>目标</strong>：让学员具备进入入门班的基本操作能力和安全意识。</p>
+<p>内容：</p>
+<ul class="content-list"><li>AI、LLM、RAG、Agent、Workflow 的最小概念；</li><li>浏览器、文件、表格、Markdown 和基础版本记录；</li><li>如何使用公开、模拟和脱敏资料；</li><li>什么是个人信息、密钥、客户数据和生产权限；</li><li>如何记录输入、输出、版本和失败；</li><li>了解入门班不是就业承诺，也不是生产交付。</li></ul>
+<p>产出：</p>
+<ul class="content-list"><li>个人学习目标卡；</li><li>一个安全的数据处理练习；</li><li>一个简单的 AI 任务说明；</li><li>环境预检记录。</li></ul>
+<p>通过线：能按说明完成一次安全的模拟任务，知道至少三种禁止行为。</p>
+<h3 id="section-06" data-heading="true">2.2 L1 入门班</h3>
+<p><strong>目标</strong>：成为能够在脚手架和指导下完成垂直功能 Demo 的学员。</p>
+<p>核心内容：</p>
+<ul class="content-list"><li>用户和任务；</li><li>Demo Brief；</li><li>输入输出契约；</li><li>材料整理和来源追溯；</li><li>Workflow/受限 Agent 选择；</li><li>Demo 构建；</li><li>12 条固定测试；</li><li>失败复现、修订和回归；</li><li>Runbook、演示和证据包。</li></ul>
+<p>结课结果：</p>
+<ul class="content-list"><li>不是“会用很多工具”；</li><li>而是能把一个窄任务从想法做成可复核 Demo；</li><li>具备申请进阶班的基础证据。</li></ul>
+<p>详细内容见 <a href="FDE入门班课程体系_V1.0.html">FDE入门班课程体系</a>。</p>
+<h3 id="section-07" data-heading="true">2.3 L2/L3 进阶核心课</h3>
+<p><strong>目标</strong>：成为能够在项目团队中承担受控工作包的 FDE 学员。</p>
+<p>核心内容：</p>
+<ul class="content-list"><li>客户发现、流程观察、场景评分和 ROI；</li><li>数据治理和知识工程；</li><li>RAG、Agent、Workflow 和工具契约；</li><li>API、字段映射、状态、幂等、重试和恢复；</li><li>权限、日志、评测、成本、部署和回滚；</li><li>PoC/MVD、UAT、培训、RACI、上线和运营；</li><li>Bad Case、资产复用和产品化。</li></ul>
+<p>该阶段的核心项目：</p>
+<ol class="content-list"><li>企业知识 Agent；</li><li>企业流程 Agent；</li><li>陌生业务 MVD 挑战。</li></ol>
+<p>详细内容见 <a href="FDE进阶班课程体系_V1.0.html">FDE进阶班课程体系</a>。</p>
+<h3 id="section-08" data-heading="true">2.4 L3/L4 项目认证</h3>
+<p><strong>目标</strong>：验证学员能否把课程能力迁移到陌生业务，而不是只会照着模板完成作业。</p>
+<p>四个认证工作坊：</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">工作坊</th><th scope="col">任务</th><th scope="col">主要产出</th></tr></thead><tbody><tr><td>P01 业务诊断</td><td>访谈一个真实岗位或高还原岗位</td><td>岗位画像、流程、问题/假设、角色、数据与权限</td></tr><tr><td>P02 MVD 设计</td><td>设计 60-90 天可验证的窄场景</td><td>MVD、ROI、架构、RACI、验收指标和风险</td></tr><tr><td>P03 试点战争室</td><td>处理数据、接口、采用、预算和效果变化</td><td>事件记录、变更、风险升级、复盘和继续/停止/扩大建议</td></tr><tr><td>P04 资产复用答辩</td><td>让另一名成员复现或迁移资产</td><td>复用记录、回归、版本说明、技术/业务双向答辩</td></tr></tbody></table></div>
+<h3 id="section-09" data-heading="true">2.5 L5 FDE 骨干与导师</h3>
+<p>L5 不是再上一门理论课，而是进入真实项目后的带教和组织影响阶段。</p>
+<p>建议 12-24 周完成：</p>
+<ol class="content-list"><li>作为副负责人参与一个真实或高还原 MVD；</li><li>独立负责一个从需求到验收的工作包；</li><li>组织一次客户/业务/IT 多方评审；</li><li>带教一名 L1 或 L2 学员；</li><li>将一个客户差异沉淀成模板、组件、连接器或评估集；</li><li>提交一次项目经营复盘，说明结果、成本、采用、风险和资产；</li><li>主持一次内部方法分享。</li></ol>
+<p>L5 通过线：</p>
+<ul class="content-list"><li>能带领一个 2-5 人 FDE pod；</li><li>能在不确定条件下做范围、风险和资源判断；</li><li>能让客户团队学会使用和维护；</li><li>能把至少两次项目经验抽象为可复用方法；</li><li>能发现什么时候不应该使用 FDE 重交付，而应转为标准产品或自助路径。</li></ul>
+<hr class="section-rule">
+<h2 id="section-10" data-heading="true">3. 六项能力 × 五级成长矩阵</h2>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">能力</th><th scope="col">L1</th><th scope="col">L2</th><th scope="col">L3</th><th scope="col">L4</th><th scope="col">L5</th></tr></thead><tbody><tr><td>技术</td><td>在脚手架内运行 Demo</td><td>接数据、API、工作流、日志和基础部署</td><td>在指导下做方案和故障定位</td><td>能复用组件、评估和部署包</td><td>能做跨项目架构和技术治理</td></tr><tr><td>业务</td><td>说清一个用户和任务</td><td>能画流程和输入输出</td><td>能访谈、选场景、算 ROI</td><td>能识别跨客户共性问题</td><td>能影响高层和定义业务优先级</td></tr><tr><td>产品</td><td>做范围削减</td><td>能选合适实现方式</td><td>能定义 MVD 和用户体验</td><td>能抽象模板、连接器和产品反馈</td><td>能推动产品路线和产品化门槛</td></tr><tr><td>交付</td><td>按说明运行和测试</td><td>能承担限定工作包</td><td>能推进依赖、验收和交接</td><td>能建立交付手册和复盘机制</td><td>能带 pod 和多项目交付</td></tr><tr><td>组织推动</td><td>能向同伴解释边界</td><td>能参与 RACI 和用户测试</td><td>能协调业务、IT、用户和决策者</td><td>能推动内部冠军和复制</td><td>能改变组织的人机协作方式</td></tr><tr><td>心智素质</td><td>失败不掩盖、会求助</td><td>能记录问题并完成修订</td><td>在混乱中建立秩序和下一步</td><td>能把失败变成资产</td><td>能在压力和冲突中保护结果与边界</td></tr></tbody></table></div>
+<p>课程分数不得替代这些行为证据。尤其不能因为一个学员代码能力高，就推断其具备业务、交付和组织能力。</p>
+<hr class="section-rule">
+<h2 id="section-11" data-heading="true">4. 准入、晋级和退出机制</h2>
+<h3 id="section-12" data-heading="true">4.1 入门班准入</h3>
+<p>不设置复杂学历门槛，主要检查：</p>
+<ul class="content-list"><li>是否能使用电脑和文件；</li><li>是否能理解文字任务；</li><li>是否愿意按规则记录和测试；</li><li>是否接受只使用安全材料；</li><li>是否能识别明显的高风险动作。</li></ul>
+<p>入门班允许零基础学员参加，但第一周就建立证据和安全边界。</p>
+<h3 id="section-13" data-heading="true">4.2 入门班到进阶班</h3>
+<p>学员满足以下条件后可申请进阶班：</p>
+<ul class="content-list"><li>L1-G01 至 L1-G04 全部通过；</li><li>T01-T12 固定测试全部实际运行；</li><li>有效结果、负向结果和失败记录齐全；</li><li>至少一次证据驱动修订并回归；</li><li>第三方能按 Runbook 冷启动；</li><li>提交个人证据索引。</li></ul>
+<p>默认进入 C-Bridge。申请 A-Tech 需要额外完成：</p>
+<ul class="content-list"><li>基础编程/API/版本记录诊断；</li><li>能说明本人修改；</li><li>能复现并定位一个指定故障；</li><li>能重跑受影响回归。</li></ul>
+<h3 id="section-14" data-heading="true">4.3 进阶核心课到 L3/L4 认证</h3>
+<p>核心课通过只表示完成了项目制学习，不自动产生 L3/L4。必须进入 4 周项目认证加训，补齐：</p>
+<ul class="content-list"><li>陌生业务访谈；</li><li>场景和 ROI 判断；</li><li>MVD 方案；</li><li>试点/上线复盘；</li><li>第三方资产复用；</li><li>技术和业务双向答辩。</li></ul>
+<h3 id="section-15" data-heading="true">4.4 未通过处理</h3>
+<ul class="content-list"><li>保留原失败版本；</li><li>写明失败 Gate、缺口和证据定位；</li><li>只提交最小修订；</li><li>重跑受影响的正常和失败测试；</li><li>团队证据不能替代个人证据；</li><li>关键安全、越权、泄露、伪造和绕过审批行为直接暂停并升级。</li></ul>
+<h3 id="section-16" data-heading="true">4.5 退出与重新申请</h3>
+<p>退出当前批次不等于永久淘汰。重新申请时需要：</p>
+<ul class="content-list"><li>提交旧结果和缺口；</li><li>说明已完成的补课或项目；</li><li>按当前版本任务重新验证受影响能力；</li><li>如存在证据完整性或安全问题，先完成清理和复核。</li></ul>
+<hr class="section-rule">
+<h2 id="section-17" data-heading="true">5. 项目与岗位分流</h2>
+<p>证书和项目/岗位推荐必须分开判断。</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">学员状态</th><th scope="col">可进入的机会</th><th scope="col">不可承担</th></tr></thead><tbody><tr><td>L1</td><td>内部 Demo、资料整理、测试协助</td><td>客户数据、生产权限、独立交付</td></tr><tr><td>L2</td><td>导师带教下的数据整理、测试、工作流配置和文档</td><td>独立定义客户范围、独立验收、直接承诺结果</td></tr><tr><td>L3</td><td>项目候选池、MVD 诊断协作、限定工作包</td><td>无导师独立负责高风险客户项目</td></tr><tr><td>L4</td><td>初级 FDE 骨干、项目助理、资产建设和部分客户工作包</td><td>代替 CTO/项目负责人作重大商业、技术和安全决策</td></tr><tr><td>L5</td><td>FDE pod 负责人、项目导师、产品化和客户复盘</td><td>绕过公司最终决策和客户正式授权</td></tr></tbody></table></div>
+<p>进入项目池的最低条件建议为：</p>
+<ul class="content-list"><li>L3 证据通过；</li><li>至少一个完整项目包；</li><li>沟通、现场反应和风险意识通过；</li><li>有明确导师、项目角色、时间和客户边界；</li><li>项目与学员能力和风险等级匹配。</li></ul>
+<p>进入岗位推荐还要单独确认工作地点、出差、薪资、合同、客户行业、岗位职责和导师安排。课程不得对外承诺就业。</p>
+<hr class="section-rule">
+<h2 id="section-18" data-heading="true">6. 训练项目分层</h2>
+<h3 id="section-19" data-heading="true">6.1 L1：单功能、低风险、强脚手架</h3>
+<ul class="content-list"><li>产品资料助手；</li><li>内部 FAQ 检索；</li><li>会议纪要结构化；</li><li>销售跟进纪要草稿；</li><li>简单内容审核建议。</li></ul>
+<p>共同边界：公开/脱敏材料、人工确认、不写回生产、不自动发送。</p>
+<h3 id="section-20" data-heading="true">6.2 L2：完整链路、受控集成、强失败训练</h3>
+<ul class="content-list"><li>企业知识 Agent；</li><li>客服工单分类和回复草稿；</li><li>支持升级 Workflow；</li><li>制造工单和异常知识助手；</li><li>销售资料统一与下一步提醒。</li></ul>
+<p>共同边界：模拟接口或沙箱、最小权限、固定评测、日志、重试、幂等、回滚。</p>
+<h3 id="section-21" data-heading="true">6.3 L3-L4：陌生业务、真实指标、第三方复现</h3>
+<ul class="content-list"><li>30 人销售公司：统一字段、纪要和提醒；</li><li>200 人制造企业：工单分类、异常总结、知识库更新；</li><li>B2B SaaS：客服工单和内部知识；</li><li>金融：内部知识、材料完整性和研报摘要；</li><li>医疗：文书和质控，不做诊断终局。</li></ul>
+<p>项目切入标准：</p>
+<blockquote><p>低风险 × 高频 × 可量化 × 数据可得 × 不碰终局决策</p></blockquote>
+<hr class="section-rule">
+<h2 id="section-22" data-heading="true">7. 1251 份信号资料如何纳入体系</h2>
+<h3 id="section-23" data-heading="true">7.1 不逐条读完会不会影响课程完整性</h3>
+<p>要区分三件事：</p>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">“完整”的含义</th><th scope="col">目前结论</th></tr></thead><tbody><tr><td>逐条完成 1251 份资料综述</td><td>尚未完成，也不是课程设计的必要条件</td></tr><tr><td>六项能力、五级路径、项目生命周期和考核闭环覆盖</td><td>已覆盖，Datawhale、OpenFDE 和公司内部标准可以支撑主干</td></tr><tr><td>案例、工具和趋势永远最新</td><td>不可能一次性完成，必须建立持续更新机制</td></tr></tbody></table></div>
+<p>因此，没有逐条阅读 1251 份资料不会削弱课程主干的完整性；它会影响案例广度、最新工具覆盖和趋势判断的细度。若把课程目标定义成“对 1251 份资料做全面研究综述”，那当前当然不完整；如果课程目标是培养 FDE 能力，按能力和项目证据设计课程比按资料数量设计更可靠。</p>
+<h3 id="section-24" data-heading="true">7.2 资料分层</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">层级</th><th scope="col">用途</th><th scope="col">资料处理方式</th></tr></thead><tbody><tr><td>A 核心方法</td><td>定义 FDE、能力、生命周期、交付标准</td><td>由课程负责人完整阅读，锁定版本和引用</td></tr><tr><td>B 典型实践</td><td>案例、岗位、组织形态、工具组合</td><td>按主题抽样，进入案例库和课堂事件卡</td></tr><tr><td>C 变化信号</td><td>新工具、新模型、新职位、新报价、新部署方式</td><td>季度扫描，只用于更新选修和工具地图</td></tr><tr><td>D 待验证线索</td><td>社区、媒体、二手讨论和未经核实信息</td><td>不能直接写成课程结论或客户承诺</td></tr></tbody></table></div>
+<h3 id="section-25" data-heading="true">7.3 建议建立 Source Ledger</h3>
+<p>每条被纳入课程的资料至少登记：</p>
+<ul class="content-list"><li>source_id；</li><li>标题、链接、发布日期；</li><li>主题和对应能力；</li><li>来源类型和可信度；</li><li>是否已打开核验；</li><li>支撑的课程模块/课次；</li><li>可使用的观点；</li><li>不可外推的边界；</li><li>版权和商业使用限制；</li><li>下次复核日期。</li></ul>
+<h3 id="section-26" data-heading="true">7.4 抽样和覆盖方法</h3>
+<p>不按“读了多少条”验收，而按覆盖矩阵验收：</p>
+<ol class="content-list"><li>六项能力 × 五级路径；</li><li>五个交付阶段；</li><li>至少五类行业；</li><li>SMB、中型、Enterprise 三种客户规模；</li><li>正常、失败、越权、采用、成本和产品化六类项目证据；</li><li>每个核心结论至少有一条权威/一手来源和一条实践材料；</li><li>每个高风险主题至少使用官方文档、法规或客户正式要求复核。</li></ol>
+<h3 id="section-27" data-heading="true">7.5 学员如何使用信号库</h3>
+<p>每周选 2 条与当前项目有关的资料，完成：</p>
+<ul class="content-list"><li>资料类型和可信度标注；</li><li>这条资料改变了哪个决策；</li><li>是否能迁移到当前项目；</li><li>哪个部分不能外推；</li><li>是否需要进入下一版模板或评估集。</li></ul>
+<p>这样，信号库成为训练判断力的材料，而不是“读书打卡数量竞赛”。</p>
+<hr class="section-rule">
+<h2 id="section-28" data-heading="true">8. 课程和资料的更新机制</h2>
+<h3 id="section-29" data-heading="true">8.1 稳定层</h3>
+<p>半年或年度复核：</p>
+<ul class="content-list"><li>六项能力；</li><li>五级路径；</li><li>客户发现；</li><li>流程拆解；</li><li>ROI；</li><li>交付、验收、组织采用；</li><li>资产沉淀；</li><li>现场心智和风险边界。</li></ul>
+<h3 id="section-30" data-heading="true">8.2 变化层</h3>
+<p>每季度复核：</p>
+<ul class="content-list"><li>模型能力和价格；</li><li>RAG、Agent、Workflow 框架；</li><li>低代码平台；</li><li>部署和监控工具；</li><li>开源许可证；</li><li>私有化、内网和信创适配；</li><li>新行业案例和岗位要求。</li></ul>
+<p>任何工具更新都必须回答：如果工具消失，学员需要保留的能力是什么？</p>
+<h3 id="section-31" data-heading="true">8.3 版本制度</h3>
+<p>每次更新记录：</p>
+<ul class="content-list"><li>变更原因；</li><li>影响课次；</li><li>影响项目；</li><li>影响测试；</li><li>影响许可/数据边界；</li><li>是否需要重新跑固定集；</li><li>是否需要重新培训教师和助教。</li></ul>
+<hr class="section-rule">
+<h2 id="section-32" data-heading="true">9. 师资与导师体系</h2>
+<h3 id="section-33" data-heading="true">9.1 主讲老师</h3>
+<p>必须能：</p>
+<ul class="content-list"><li>讲清 FDE 和企业 AI 落地；</li><li>讲清业务、技术、产品和交付的连接；</li><li>现场拆解学员问题；</li><li>不把未知内容包装成确定答案；</li><li>设计失败和红队训练；</li><li>评估个人证据，而不是只看团队 Demo；</li><li>将项目经验沉淀成课程和交付资产。</li></ul>
+<h3 id="section-34" data-heading="true">9.2 助教</h3>
+<p>助教不替学员完成任务，主要职责是：</p>
+<ul class="content-list"><li>检查环境、版本和安全边界；</li><li>提问和定位问题；</li><li>记录求助和恢复；</li><li>进行第三方冷启动；</li><li>复核个人贡献；</li><li>把共性卡点反馈给主讲。</li></ul>
+<h3 id="section-35" data-heading="true">9.3 项目导师</h3>
+<p>进入 L3-L4 和 L5 阶段后，需要一名项目导师负责：</p>
+<ul class="content-list"><li>客户边界；</li><li>任务分派；</li><li>结果和风险评审；</li><li>学员权限；</li><li>证据和验收；</li><li>对外沟通升级。</li></ul>
+<p>学员不得因课程通过自动获得客户生产权限。</p>
+<hr class="section-rule">
+<h2 id="section-36" data-heading="true">10. 培养效果的衡量</h2>
+<h3 id="section-37" data-heading="true">10.1 课堂层</h3>
+<ul class="content-list"><li>固定测试执行率；</li><li>失败路径复现率；</li><li>第三方冷启动成功率；</li><li>个人证据链完整率；</li><li>补做率；</li><li>助教求助峰值和恢复时长；</li><li>学员能否在随机追问中说明边界。</li></ul>
+<h3 id="section-38" data-heading="true">10.2 项目层</h3>
+<ul class="content-list"><li>MVD 是否进入真实或高还原流程；</li><li>用户试用完成率；</li><li>采用和重复使用；</li><li>处理时长、质量、错误率、人工修改率；</li><li>越权、回滚和异常记录；</li><li>模型/API/运维成本；</li><li>资产被第二个场景复用的情况。</li></ul>
+<h3 id="section-39" data-heading="true">10.3 人才层</h3>
+<p>在课程结束后 30/60/90 天复核：</p>
+<ul class="content-list"><li>是否进入项目候选池；</li><li>是否承担真实工作包；</li><li>是否被导师复用；</li><li>是否完成一次客户/用户沟通；</li><li>是否产生新的模板、评估集或复盘；</li><li>是否因能力不足、边界不匹配或岗位条件退出。</li></ul>
+<p>这些指标用于观察培养结果，不提前承诺就业率或项目转化率。</p>
+<hr class="section-rule">
+<h2 id="section-40" data-heading="true">11. 首期落地计划</h2>
+<h3 id="section-41" data-heading="true">T-4 周：准备</h3>
+<ul class="content-list"><li>锁定入门班和进阶班版本；</li><li>选定主讲、助教、Tech-Ops 和 Delivery-Lead；</li><li>准备公开/脱敏材料、测试集和故障卡；</li><li>核对工具、账号、额度、沙箱和密钥管理；</li><li>完成教师试跑和第三方冷启动。</li></ul>
+<h3 id="section-42" data-heading="true">T-2 周：小范围试教</h3>
+<ul class="content-list"><li>用 3-5 名内部成员试跑 L1-S01、L1-S06、L2-S02、L2-S11；</li><li>记录实际时长、求助、失败和材料缺口；</li><li>修正讲义、脚手架、测试和评分表；</li><li>不把试教结果宣传为正式学习效果。</li></ul>
+<h3 id="section-43" data-heading="true">T-1 周：开班闸门</h3>
+<ul class="content-list"><li>完成学员预检；</li><li>锁定分组和学习轨道；</li><li>确认 1 主讲 + 2 助教；</li><li>确认数据、权限、API、沙箱、恢复和事故联系人；</li><li>未满足条件的场次不启动。</li></ul>
+<h3 id="section-44" data-heading="true">课程期间</h3>
+<ul class="content-list"><li>每场保存关闭证据；</li><li>每周做一次项目评审；</li><li>第 4 周检查 L1 证据；</li><li>第 8 周检查进阶核心课证据；</li><li>第 12 周进行 L3-L4 项目认证；</li><li>只根据证据发出通过、补做或暂缓结论。</li></ul>
+<h3 id="section-45" data-heading="true">课程结束后</h3>
+<ul class="content-list"><li>30 天复核项目和岗位匹配；</li><li>60 天复核资产是否继续使用；</li><li>90 天复核 L5 候选和下一批课程缺口；</li><li>每季度更新工具和信号资料。</li></ul>
+<hr class="section-rule">
+<h2 id="section-46" data-heading="true">12. 最终原则</h2>
+<p>完整的人才培养体系，不是把课表排满，而是让每一层都回答清楚：</p>
+<ol class="content-list"><li>这层学员能承担什么责任；</li><li>用什么项目观察；</li><li>必须留下什么产出；</li><li>由谁按什么标准复核；</li><li>不通过如何补做；</li><li>通过后能进入什么机会；</li><li>还不能做什么；</li><li>如何把一次学习变成下一次交付资产。</li></ol>
+<p>FDE 培养的终点不是“会用 AI”，而是：</p>
+<blockquote><p>能在复杂现场找到正确问题，把系统跑起来，让人愿意使用，用证据证明结果，再把经验沉淀成组织能力。</p></blockquote>
+<hr class="section-rule">
+<h2 id="section-47" data-heading="true">13. 主要资料</h2>
+<ul class="content-list"><li><a href="https://datawhaler.feishu.cn/wiki/QdG2wYRESiNoWBkeVzjclRlFnlc" target="_blank" rel="noreferrer noopener">Datawhale FDE 培养方案知识库</a></li><li><a href="https://openfde.net/zh/docs/what-is-fde" target="_blank" rel="noreferrer noopener">OpenFDE：什么是 FDE</a></li><li><a href="https://openfde.net/zh/docs/workflow" target="_blank" rel="noreferrer noopener">OpenFDE：FDE 工作流</a></li><li><a href="https://openfde.net/zh/docs/capabilities" target="_blank" rel="noreferrer noopener">OpenFDE：能力模型</a></li><li><a href="https://openfde.net/zh/docs/learning-path" target="_blank" rel="noreferrer noopener">OpenFDE：90 天学习路径</a></li><li><a href="https://openfde.net/zh/docs/interview" target="_blank" rel="noreferrer noopener">OpenFDE：FDE 面试</a></li><li><a href="https://openfde.net/zh/white-book" target="_blank" rel="noreferrer noopener">OpenFDE：实战白皮书</a></li><li><a href="https://openfde.net/zh/tool-map" target="_blank" rel="noreferrer noopener">OpenFDE：AI 工具地图</a></li><li><a href="https://openfde.net/zh/research" target="_blank" rel="noreferrer noopener">OpenFDE：信号库</a></li></ul>
+<p>资料使用注意：外部资料用于方法依据、案例研究和阅读引导。商业培训中的讲义、案例、图表和练习应由公司原创或取得明确授权，尤其要核对工作区参考资料中对商业培训和内容改编的限制。</p></article>
+      <footer class="document-footer">
+        <div><span class="brand-mark small">F</span><span>FDE 人才培养体系 · 内容源完整保留</span></div>
+        <a href="FDE人才培养体系门户.html">返回体系门户 ↑</a>
+      </footer>
+    </main>
+  </div>
+  <div class="search-status" data-search-status aria-live="polite"></div>
+  <script src="fde-curriculum.js" defer></script>
+</body>
+</html>
