@@ -4,7 +4,6 @@ import html
 import json
 import re
 from pathlib import Path
-from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parent
@@ -216,16 +215,16 @@ def scenario_library_html(data: dict) -> str:
 
 
 def href_for(raw: str) -> str:
-    """Keep external links intact and make local Markdown references useful offline."""
+    """Keep public links usable without leaking a local workspace path."""
     value = raw.strip()
     value = value.replace("\\", "/")
     if value in LOCAL_HTML_MAP:
         return LOCAL_HTML_MAP[value]
-    if value.startswith("E:/"):
+    if value.lower().startswith("file:///") or re.match(r"^[A-Za-z]:/", value) or value.startswith(("/Users/", "/home/")):
         basename = Path(value).name
         if basename in LOCAL_HTML_MAP:
             return LOCAL_HTML_MAP[basename]
-        return "file:///" + quote(value, safe="/:?=&%#")
+        return ""
     return value
 
 
@@ -244,6 +243,8 @@ def inline_markdown(value: str) -> str:
     def link_replacement(match: re.Match[str]) -> str:
         label = html.escape(match.group(1), quote=False)
         target = href_for(match.group(2) or match.group(3) or "")
+        if not target:
+            return stash(f'<span class="offline-reference" title="工作区材料未随仓库分发">{label}</span>')
         title = match.group(4)
         attrs = f' href="{html.escape(target, quote=True)}"'
         if title:
@@ -649,3 +650,4 @@ def build() -> None:
 
 if __name__ == "__main__":
     build()
+
