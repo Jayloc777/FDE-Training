@@ -33,7 +33,7 @@ DOCS = [
         "title": "川麒科技 FDE 入门班课程体系",
         "subtitle": "从 AI 工具使用者到可复核的企业 AI 垂直功能 Demo 执行者，并能用 15 个练习场景和 24 个真实案例持续训练。",
         "tone": "lime",
-        "stats": [("周期", "4 周 · 8 节"), ("证据包", "9 类"), ("练习 + 案例", "15 + 24")],
+        "stats": [("周期", "4 天 · 8 节"), ("课堂", "12 小时"), ("练习 + 案例", "15 + 24")],
         "tagline": "L1 Assisted Execution",
     },
     {
@@ -617,7 +617,7 @@ def portal_html() -> str:
       <div class="section-heading"><div><span class="micro-label">COURSE DOCUMENTS</span><h2>三份可直接执行的文档</h2></div><p>点击进入完整版本。所有正文均由原始 Markdown 逐段转换，适合阅读、检索、打印与分享。</p></div>
       <div class="document-cards">
         <a class="document-card card-cyan" href="FDE人才培养体系总方案_V1.0.html"><div class="card-top"><span class="doc-number">01</span><span class="card-arrow">↗</span></div><span class="micro-label">SYSTEM MAP</span><h3>人才培养体系总方案</h3><p>全路径、能力模型、分流门槛、项目梯度、信号库治理与运营指标。</p><div class="card-meta"><span>L0 → L5</span><span>392 行源文档</span></div></a>
-        <a class="document-card card-lime" href="FDE入门班课程体系_V1.0.html"><div class="card-top"><span class="doc-number">02</span><span class="card-arrow">↗</span></div><span class="micro-label">FOUNDATION</span><h3>FDE 入门班课程体系</h3><p>4 周 8 节课，完成一个安全、可测试、可复核的垂直功能 Demo。</p><div class="card-meta"><span>L1 Assisted</span><span>V1.2 · 15练习 + 24案例</span></div></a>
+        <a class="document-card card-lime" href="FDE入门班课程体系_V1.0.html"><div class="card-top"><span class="doc-number">02</span><span class="card-arrow">↗</span></div><span class="micro-label">FOUNDATION</span><h3>FDE 入门班课程体系</h3><p>4 天 8 节课，每节 90 分钟，完成一个安全、可测试、可复核的垂直功能 Demo。</p><div class="card-meta"><span>L1 Assisted</span><span>V1.3 · 15练习 + 24案例</span></div></a>
         <a class="document-card card-violet" href="FDE进阶班课程体系_V1.0.html"><div class="card-top"><span class="doc-number">03</span><span class="card-arrow">↗</span></div><span class="micro-label">FIELD CORE</span><h3>FDE 进阶班课程体系</h3><p>8 周核心训练 + 4 周认证延展，覆盖 16 节课与 P01-P04 现场实训。</p><div class="card-meta"><span>L2/L3 → L4</span><span>606 行源文档</span></div></a>
       </div>
     </section>
